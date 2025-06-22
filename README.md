@@ -21,6 +21,19 @@ Projeto - Sistema de recomendação baseado em colaboração e em conteúdo
 
 ![image](https://github.com/user-attachments/assets/5cd3fbc6-749f-4401-96c9-81d05dc2202d)
 
+### subir o servidor
+cd C:\testes\Ontologias
+uvicorn main:app --reload
+
+Abra no navegador:
+
+    http://localhost:8000 → mensagem de sucesso
+
+    http://localhost:8000/recursos → lista os recursos educacionais (se existirem)
+
+Também disponível em Swagger:
+
+📘 http://localhost:8000/docs
 
 
 ## Consulta classes existentes
