@@ -3,7 +3,7 @@
 Projeto - Sistema de recomendação baseado em colaboração e em conteúdo
 
 ## Recursos
-
+```
 [Frontend Laravel]
        |
        v
@@ -15,7 +15,7 @@ Projeto - Sistema de recomendação baseado em colaboração e em conteúdo
 [Usuário responde quiz]   [Consulta ontologia via OWLReady2]
        |                       |
 [Recebe recomendação]   [Retorna recursos educacionais]
-
+```
 
 ## Consulta classes existentes
 
