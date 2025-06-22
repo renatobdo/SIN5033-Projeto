@@ -1,8 +1,8 @@
-# SIN5033-Projeto
+## SIN5033-Projeto
 Projeto - Sistema de recomendação baseado em colaboração e em conteúdo
 
 
-# Consulta instâncias da classe usuário
+## Consulta instâncias da classe usuário
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX : <http://www.exemplo.org/arboviroses#>
@@ -16,8 +16,9 @@ SELECT DISTINCT ?usuario ?nome ?email ?idade WHERE {
 ORDER BY ?usuario
 
 
-# Consulta recursos educacionais
+## Consulta recursos educacionais
 
+```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX : <http://www.exemplo.org/arboviroses#>
 
