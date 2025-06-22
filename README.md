@@ -17,6 +17,12 @@ Projeto - Sistema de recomendação baseado em colaboração e em conteúdo
 [Recebe recomendação]   [Retorna recursos educacionais]
 ```
 
+## Requisitos
+
+![image](https://github.com/user-attachments/assets/5cd3fbc6-749f-4401-96c9-81d05dc2202d)
+
+
+
 ## Consulta classes existentes
 
 ```sparql
