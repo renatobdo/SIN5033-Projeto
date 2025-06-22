@@ -37,6 +37,9 @@ Também disponível em Swagger:
 
 ### Apache Jena
 
+http://localhost:3030
+
+
 ![image](https://github.com/user-attachments/assets/62c7a5b8-0ca9-4901-9f31-784dac14ac94)
 
 
