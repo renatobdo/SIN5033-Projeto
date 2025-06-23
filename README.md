@@ -17,6 +17,9 @@ Projeto - Sistema de recomendação baseado em colaboração e em conteúdo
 [Recebe recomendação]   [Retorna recursos educacionais]
 ```
 
+![Arquitetura-Sistema-Recomendacao](https://github.com/user-attachments/assets/ec756454-50d6-4641-86d9-7102db087abb)
+
+
 ## Requisitos
 
 ![image](https://github.com/user-attachments/assets/5cd3fbc6-749f-4401-96c9-81d05dc2202d)
