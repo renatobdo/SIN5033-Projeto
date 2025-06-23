@@ -3,21 +3,9 @@
 Projeto - Sistema de recomendação baseado em colaboração e em conteúdo
 
 ## Recursos
-```
-[Frontend Laravel]
-       |
-       v
-[Backend Laravel] ---------+
-       |                   |
-       |                [FastAPI Ontology Microservice]
-       |                       |
-       |                       v
-[Usuário responde quiz]   [Consulta ontologia via OWLReady2]
-       |                       |
-[Recebe recomendação]   [Retorna recursos educacionais]
-```
 
 ![Arquitetura-Sistema-Recomendacao](https://github.com/user-attachments/assets/ec756454-50d6-4641-86d9-7102db087abb)
+
 
 
 ## Requisitos
