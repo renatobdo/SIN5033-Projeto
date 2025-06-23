@@ -194,3 +194,5 @@ https://prefeitura.sp.gov.br/documents/d/saude/documento-tecnico_-dengue_2025-pd
 
 https://docs.google.com/spreadsheets/d/1a46T0khfDvURwdXQ6CAovSgufJffJBhcW6mmBxSomUI/edit?usp=sharing 
 
+https://nies.saude.sp.gov.br/ses/publico/dengue 
+
