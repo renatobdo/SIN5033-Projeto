@@ -1,0 +1,235 @@
+@prefix :   <http://www.exemplo.org/arboviroses#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+#################################################################
+#  Propriedades (caso ainda não existam no seu vocabulário)
+#################################################################
+
+:weekNumber         a              owl:DatatypeProperty ; rdfs:domain :IndicadorEpidemiologico ; rdfs:range xsd:int .
+:weekStart          a              owl:DatatypeProperty ; rdfs:domain :IndicadorEpidemiologico ; rdfs:range xsd:date .
+:weekEnd            a              owl:DatatypeProperty ; rdfs:domain :IndicadorEpidemiologico ; rdfs:range xsd:date .
+:casesDengue        a              owl:DatatypeProperty ; rdfs:domain :IndicadorEpidemiologico ; rdfs:range xsd:int .
+:casesDengueAlarm   a              owl:DatatypeProperty ; rdfs:domain :IndicadorEpidemiologico ; rdfs:range xsd:int .
+:casesDengueSevere  a              owl:DatatypeProperty ; rdfs:domain :IndicadorEpidemiologico ; rdfs:range xsd:int .
+
+#################################################################
+#  Instâncias de IndicadorEpidemiologico – Semanas 1-24
+#################################################################
+
+:IndEpi_2025_W01
+        a                     :IndicadorEpidemiologico ;
+        :weekNumber           1 ;
+        :weekStart           "2024-12-29"^^xsd:date ;
+        :weekEnd             "2025-01-04"^^xsd:date ;
+        :casesDengue          164 ;
+        :casesDengueAlarm       0 ;
+        :casesDengueSevere      0 .
+
+:IndEpi_2025_W02
+        a                     :IndicadorEpidemiologico ;
+        :weekNumber           2 ;
+        :weekStart           "2025-01-05"^^xsd:date ;
+        :weekEnd             "2025-01-11"^^xsd:date ;
+        :casesDengue          461 ;
+        :casesDengueAlarm       8 ;
+        :casesDengueSevere      0 .
+
+:IndEpi_2025_W03  a :IndicadorEpidemiologico ;
+        :weekNumber           3 ;
+        :weekStart           "2025-01-12"^^xsd:date ;
+        :weekEnd             "2025-01-18"^^xsd:date ;
+        :casesDengue          507 ;
+        :casesDengueAlarm       9 ;
+        :casesDengueSevere      0 .
+
+:IndEpi_2025_W04  a :IndicadorEpidemiologico ;
+        :weekNumber           4 ;
+        :weekStart           "2025-01-19"^^xsd:date ;
+        :weekEnd             "2025-01-25"^^xsd:date ;
+        :casesDengue          550 ;
+        :casesDengueAlarm       7 ;
+        :casesDengueSevere      1 .
+
+:IndEpi_2025_W05  a :IndicadorEpidemiologico ;
+        :weekNumber           5 ;
+        :weekStart           "2025-01-26"^^xsd:date ;
+        :weekEnd             "2025-02-01"^^xsd:date ;
+        :casesDengue          742 ;
+        :casesDengueAlarm       7 ;
+        :casesDengueSevere      0 .
+
+:IndEpi_2025_W06  a :IndicadorEpidemiologico ;
+        :weekNumber           6 ;
+        :weekStart           "2025-02-02"^^xsd:date ;
+        :weekEnd             "2025-02-08"^^xsd:date ;
+        :casesDengue          834 ;
+        :casesDengueAlarm       7 ;
+        :casesDengueSevere      2 .
+
+:IndEpi_2025_W07  a :IndicadorEpidemiologico ;
+        :weekNumber           7 ;
+        :weekStart           "2025-02-09"^^xsd:date ;
+        :weekEnd             "2025-02-15"^^xsd:date ;
+        :casesDengue         1074 ;
+        :casesDengueAlarm       9 ;
+        :casesDengueSevere      2 .
+
+:IndEpi_2025_W08  a :IndicadorEpidemiologico ;
+        :weekNumber           8 ;
+        :weekStart           "2025-02-16"^^xsd:date ;
+        :weekEnd             "2025-02-22"^^xsd:date ;
+        :casesDengue         1262 ;
+        :casesDengueAlarm      13 ;
+        :casesDengueSevere      1 .
+
+:IndEpi_2025_W09  a :IndicadorEpidemiologico ;
+        :weekNumber           9 ;
+        :weekStart           "2025-02-23"^^xsd:date ;
+        :weekEnd             "2025-03-01"^^xsd:date ;
+        :casesDengue         1568 ;
+        :casesDengueAlarm      21 ;
+        :casesDengueSevere      1 .
+
+:IndEpi_2025_W10  a :IndicadorEpidemiologico ;
+        :weekNumber          10 ;
+        :weekStart           "2025-03-02"^^xsd:date ;
+        :weekEnd             "2025-03-08"^^xsd:date ;
+        :casesDengue         1901 ;
+        :casesDengueAlarm      20 ;
+        :casesDengueSevere      1 .
+
+:IndEpi_2025_W11  a :IndicadorEpidemiologico ;
+        :weekNumber          11 ;
+        :weekStart           "2025-03-09"^^xsd:date ;
+        :weekEnd             "2025-03-15"^^xsd:date ;
+        :casesDengue         2667 ;
+        :casesDengueAlarm      44 ;
+        :casesDengueSevere      3 .
+
+:IndEpi_2025_W12  a :IndicadorEpidemiologico ;
+        :weekNumber          12 ;
+        :weekStart           "2025-03-16"^^xsd:date ;
+        :weekEnd             "2025-03-22"^^xsd:date ;
+        :casesDengue         3230 ;
+        :casesDengueAlarm      61 ;
+        :casesDengueSevere      3 .
+
+:IndEpi_2025_W13  a :IndicadorEpidemiologico ;
+        :weekNumber          13 ;
+        :weekStart           "2025-03-23"^^xsd:date ;
+        :weekEnd             "2025-03-29"^^xsd:date ;
+        :casesDengue         3554 ;
+        :casesDengueAlarm      77 ;
+        :casesDengueSevere      4 .
+
+:IndEpi_2025_W14  a :IndicadorEpidemiologico ;
+        :weekNumber          14 ;
+        :weekStart           "2025-03-30"^^xsd:date ;
+        :weekEnd             "2025-04-05"^^xsd:date ;
+        :casesDengue         3775 ;
+        :casesDengueAlarm      69 ;
+        :casesDengueSevere      3 .
+
+:IndEpi_2025_W15  a :IndicadorEpidemiologico ;
+        :weekNumber          15 ;
+        :weekStart           "2025-04-06"^^xsd:date ;
+        :weekEnd             "2025-04-12"^^xsd:date ;
+        :casesDengue         3506 ;
+        :casesDengueAlarm      48 ;
+        :casesDengueSevere      2 .
+
+:IndEpi_2025_W16  a :IndicadorEpidemiologico ;
+        :weekNumber          16 ;
+        :weekStart           "2025-04-13"^^xsd:date ;
+        :weekEnd             "2025-04-19"^^xsd:date ;
+        :casesDengue         3096 ;
+        :casesDengueAlarm      37 ;
+        :casesDengueSevere      3 .
+
+:IndEpi_2025_W17  a :IndicadorEpidemiologico ;
+        :weekNumber          17 ;
+        :weekStart           "2025-04-20"^^xsd:date ;
+        :weekEnd             "2025-04-26"^^xsd:date ;
+        :casesDengue         3270 ;
+        :casesDengueAlarm      51 ;
+        :casesDengueSevere      4 .
+
+:IndEpi_2025_W18  a :IndicadorEpidemiologico ;
+        :weekNumber          18 ;
+        :weekStart           "2025-04-27"^^xsd:date ;
+        :weekEnd             "2025-05-03"^^xsd:date ;
+        :casesDengue         2758 ;
+        :casesDengueAlarm      62 ;
+        :casesDengueSevere      0 .
+
+:IndEpi_2025_W19  a :IndicadorEpidemiologico ;
+        :weekNumber          19 ;
+        :weekStart           "2025-05-04"^^xsd:date ;
+        :weekEnd             "2025-05-10"^^xsd:date ;
+        :casesDengue         2774 ;
+        :casesDengueAlarm      41 ;
+        :casesDengueSevere      2 .
+
+:IndEpi_2025_W20  a :IndicadorEpidemiologico ;
+        :weekNumber          20 ;
+        :weekStart           "2025-05-11"^^xsd:date ;
+        :weekEnd             "2025-05-17"^^xsd:date ;
+        :casesDengue         2087 ;
+        :casesDengueAlarm      37 ;
+        :casesDengueSevere      3 .
+
+:IndEpi_2025_W21  a :IndicadorEpidemiologico ;
+        :weekNumber          21 ;
+        :weekStart           "2025-05-18"^^xsd:date ;
+        :weekEnd             "2025-05-24"^^xsd:date ;
+        :casesDengue         1643 ;
+        :casesDengueAlarm      26 ;
+        :casesDengueSevere      2 .
+
+:IndEpi_2025_W22  a :IndicadorEpidemiologico ;
+        :weekNumber          22 ;
+        :weekStart           "2025-05-25"^^xsd:date ;
+        :weekEnd             "2025-05-31"^^xsd:date ;
+        :casesDengue         1329 ;
+        :casesDengueAlarm      17 ;
+        :casesDengueSevere      2 .
+
+:IndEpi_2025_W23  a :IndicadorEpidemiologico ;
+        :weekNumber          23 ;
+        :weekStart           "2025-06-01"^^xsd:date ;
+        :weekEnd             "2025-06-07"^^xsd:date ;
+        :casesDengue         1014 ;
+        :casesDengueAlarm      18 ;
+        :casesDengueSevere      0 .
+
+:IndEpi_2025_W24  a :IndicadorEpidemiologico ;
+        :weekNumber          24 ;
+        :weekStart           "2025-06-08"^^xsd:date ;
+        :weekEnd             "2025-06-14"^^xsd:date ;
+        :casesDengue          436 ;
+        :casesDengueAlarm      10 ;
+        :casesDengueSevere      1 .
+
+#################################################################
+#  Instâncias – Semanas 25-53 (ainda sem dados de casos)
+#  Os valores de casos ficam em aberto para serem atualizados.
+#################################################################
+
+:IndEpi_2025_W25 a :IndicadorEpidemiologico ;
+        :weekNumber          25 ;
+        :weekStart          "2025-06-15"^^xsd:date ;
+        :weekEnd            "2025-06-21"^^xsd:date .
+
+:IndEpi_2025_W26 a :IndicadorEpidemiologico ;
+        :weekNumber          26 ;
+        :weekStart          "2025-06-22"^^xsd:date ;
+        :weekEnd            "2025-06-28"^^xsd:date .
+
+# (repita a mesma estrutura até W53)
+
+:IndEpi_2025_W53 a :IndicadorEpidemiologico ;
+        :weekNumber          53 ;
+        :weekStart          "2025-12-28"^^xsd:date ;
+        :weekEnd            "2026-01-03"^^xsd:date .
