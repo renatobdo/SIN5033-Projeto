@@ -48,7 +48,11 @@ criação do projeto:
 composer create-project laravel/laravel arboviroses-sparql-recommender
 
 cd C:\xampp\htdocs\arboviroses-sparql-recommender
+
 php artisan serve --port=8001
+
+![image](https://github.com/user-attachments/assets/7c877765-0c78-48fd-ad38-beb816f80350)
+
 
 ## Sistema de recomendação
 No código da API FastAPI, a recomendação foi implementada em duas estratégias distintas: por conteúdo e por colaboração. Ambas utilizam SPARQL diretamente no endpoint Fuseki. A seguir, explico como cada uma foi realizada:
