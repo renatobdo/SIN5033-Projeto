@@ -25,6 +25,9 @@ Projeto - Sistema de recomendação baseado em colaboração e em conteúdo
 cd C:\testes\Ontologias
 uvicorn main:app --reload
 
+![image](https://github.com/user-attachments/assets/e82c7700-c1cc-4066-b039-4fe6fcc9f8bb)
+
+
 Abra no navegador:
 
     http://localhost:8000 → mensagem de sucesso
