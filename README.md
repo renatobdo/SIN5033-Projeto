@@ -50,6 +50,62 @@ composer create-project laravel/laravel arboviroses-sparql-recommender
 cd C:\xampp\htdocs\arboviroses-sparql-recommender
 php artisan serve --port=8001
 
+## Sistema de recomendação
+No código da API FastAPI, a recomendação foi implementada em duas estratégias distintas: por conteúdo e por colaboração. Ambas utilizam SPARQL diretamente no endpoint Fuseki. A seguir, explico como cada uma foi realizada:
+
+✅ 1. Recomendação por Conteúdo
+
+Objetivo: recomendar recursos educacionais que estejam alinhados com o tipo de recurso que o próprio usuário informou como preferência (ex: vídeo, cartilha, jogo).
+SPARQL usado:
+```
+SELECT ?recurso ?tipo ?nota WHERE {
+  :usuario<nome> :temPreferenciaTipo ?tipo .
+  ?recurso a :RecursoEducacional ;
+           :temTipo ?tipo ;
+           :temNota ?nota .
+}
+ORDER BY DESC(?nota)
+LIMIT 5
+```
+O que faz:
+
+    Pega os tipos de preferência (:temPreferenciaTipo) associados ao usuário.
+
+    Busca recursos (:RecursoEducacional) que tenham esse mesmo tipo (:temTipo).
+
+    Ordena os resultados pela nota (:temNota), do maior para o menor.
+
+    Limita a 5 recursos.
+
+    Exemplo: Se o usuário gosta de "vídeo", o sistema traz os vídeos mais bem avaliados.
+
+✅ 2. Recomendação por Colaboração
+
+Objetivo: recomendar recursos que foram acessados por outros usuários com as mesmas preferências.
+SPARQL usado:
+```
+SELECT ?recurso ?tipo ?nota WHERE {
+  :usuario<nome> :temPreferenciaTipo ?tipo .
+  ?outroUsuario :temPreferenciaTipo ?tipo .
+  FILTER(?outroUsuario != :usuario<nome>)
+  ?recurso a :RecursoEducacional ;
+           :temTipo ?tipo ;
+           :temNota ?nota .
+}
+ORDER BY DESC(?nota)
+LIMIT 5
+```
+O que faz:
+
+    Identifica outros usuários que compartilham o mesmo tipo de preferência do usuário logado.
+
+    Recupera os recursos que esses outros usuários também acessaram com esse tipo.
+
+    Ordena pela nota e retorna até 5.
+
+    Exemplo: Se outro usuário também gosta de vídeos e deu nota 5 para um infográfico, esse infográfico será sugerido — mesmo que o usuário atual ainda não o tenha visto.
+
+
 ## Consulta classes existentes
 
 ```sparql
