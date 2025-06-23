@@ -190,5 +190,7 @@ https://portalsinan.saude.gov.br/dados-epidemiologicos-sinan
 
 http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinannet/cnv/denguebsp.def
 
+https://prefeitura.sp.gov.br/documents/d/saude/documento-tecnico_-dengue_2025-pdf
+
 https://docs.google.com/spreadsheets/d/1a46T0khfDvURwdXQ6CAovSgufJffJBhcW6mmBxSomUI/edit?usp=sharing 
 
