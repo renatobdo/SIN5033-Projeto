@@ -190,3 +190,5 @@ https://portalsinan.saude.gov.br/dados-epidemiologicos-sinan
 
 http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinannet/cnv/denguebsp.def
 
+https://docs.google.com/spreadsheets/d/1a46T0khfDvURwdXQ6CAovSgufJffJBhcW6mmBxSomUI/edit?usp=sharing 
+
