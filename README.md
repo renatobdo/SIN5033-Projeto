@@ -43,6 +43,13 @@ http://localhost:3030
 ![image](https://github.com/user-attachments/assets/62c7a5b8-0ca9-4901-9f31-784dac14ac94)
 
 
+### Laravel frontend
+criação do projeto:
+composer create-project laravel/laravel arboviroses-sparql-recommender
+
+cd C:\xampp\htdocs\arboviroses-sparql-recommender
+php artisan serve --port=8001
+
 ## Consulta classes existentes
 
 ```sparql
