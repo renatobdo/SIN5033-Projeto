@@ -90,3 +90,21 @@ SELECT DISTINCT ?recurso ?nota WHERE {
 }
 ORDER BY ?recurso
 ```
+
+## recursos com temtipo e temnota
+```sparql
+PREFIX : <http://www.exemplo.org/arboviroses#>
+SELECT ?recurso ?tipo ?nota WHERE {
+  ?recurso a :RecursoEducacional ;
+           :temTipo ?tipo ;
+           :temNota ?nota .
+}
+```
+
+## Usuário possui preferência
+```sparql
+PREFIX : <http://www.exemplo.org/arboviroses#>
+SELECT ?usuario ?tipo WHERE {
+  ?usuario :temPreferenciaTipo ?tipo .
+}
+```
