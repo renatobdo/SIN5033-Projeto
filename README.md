@@ -183,3 +183,10 @@ SELECT ?usuario ?tipo WHERE {
   ?usuario :temPreferenciaTipo ?tipo .
 }
 ```
+
+## Referências
+
+https://portalsinan.saude.gov.br/dados-epidemiologicos-sinan
+
+http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinannet/cnv/denguebsp.def
+
