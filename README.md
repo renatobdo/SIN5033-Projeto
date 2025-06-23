@@ -4,6 +4,15 @@ Projeto - Sistema de recomendação baseado em colaboração e em conteúdo
 
 ## Recursos
 
+Apache Jena Fuseki: https://jena.apache.org/download/ 
+Java jdk 24
+OWLReady2
+Python
+Fast API 
+Laravel
+Protege
+
+
 ![Arquitetura-Sistema-Recomendacao](https://github.com/user-attachments/assets/ec756454-50d6-4641-86d9-7102db087abb)
 
 
