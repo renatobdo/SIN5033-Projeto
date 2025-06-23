@@ -4,13 +4,26 @@ Projeto - Sistema de recomendação baseado em colaboração e em conteúdo
 
 ## Recursos
 
-Apache Jena Fuseki: https://jena.apache.org/download/ 
-Java jdk 24
-OWLReady2
-Python
-Fast API 
-Laravel
-Protege
+### Linguagens
+
+- Java (JDK 24)
+- Python
+
+### Frameworks e Bibliotecas
+
+- FastAPI (backend Python)
+- Laravel (framework PHP)
+- OWLReady2 (manipulação de ontologias em Python)
+
+### Ferramentas Semânticas
+
+- [Apache Jena Fuseki](https://jena.apache.org/download/) – servidor SPARQL
+- Protégé – editor de ontologias OWL
+
+### Banco de Dados
+
+- PostgreSQL
+
 
 
 ![Arquitetura-Sistema-Recomendacao](https://github.com/user-attachments/assets/ec756454-50d6-4641-86d9-7102db087abb)
