@@ -216,6 +216,9 @@ ORDER BY DESC(?fim)
 
 curl -H "Accept: text/turtle" --data-urlencode "query=CONSTRUCT { ?s ?p ?o } WHERE { ?s ?p ?o }" http://localhost:3030/arboviroses/query -o dados.ttl
 
+## Para dar flush no database do apache jena
+
+Entre na pasta  C:\apache-jena-fuseki-5.4.0\run\databases e remova os databases
 
 ## Referências
 
