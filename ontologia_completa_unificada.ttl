@@ -1,0 +1,514 @@
+@prefix : <http://www.exemplo.org/arboviroses#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:EliminarPratosVasos a :Prevencao ;
+    rdfs:label "Eliminar pratos de vasos de planta" ;
+    :descricao "Evite acumular água em pratinhos de vasos, substitua por areia até a borda." ;
+    :previneContra :Dengue,
+        :Zika .
+
+:EvitarAcumuloLixo a :Prevencao ;
+    rdfs:label "Evitar acúmulo de lixo" ;
+    :descricao "Mantenha lixeiras tampadas e sem água parada." ;
+    :previneContra :Chikungunya,
+        :Dengue,
+        :FebreAmarela,
+        :Zika .
+
+:IndEpi_2025_W01 a :IndicadorEpidemiologico ;
+    :casesDengue 164 ;
+    :casesDengueAlarm 0 ;
+    :casesDengueSevere 0 ;
+    :weekEnd "2025-01-04"^^xsd:date ;
+    :weekNumber 1 ;
+    :weekStart "2024-12-29"^^xsd:date .
+
+:IndEpi_2025_W02 a :IndicadorEpidemiologico ;
+    :casesDengue 461 ;
+    :casesDengueAlarm 8 ;
+    :casesDengueSevere 0 ;
+    :weekEnd "2025-01-11"^^xsd:date ;
+    :weekNumber 2 ;
+    :weekStart "2025-01-05"^^xsd:date .
+
+:IndEpi_2025_W03 a :IndicadorEpidemiologico ;
+    :casesDengue 507 ;
+    :casesDengueAlarm 9 ;
+    :casesDengueSevere 0 ;
+    :weekEnd "2025-01-18"^^xsd:date ;
+    :weekNumber 3 ;
+    :weekStart "2025-01-12"^^xsd:date .
+
+:IndEpi_2025_W04 a :IndicadorEpidemiologico ;
+    :casesDengue 550 ;
+    :casesDengueAlarm 7 ;
+    :casesDengueSevere 1 ;
+    :weekEnd "2025-01-25"^^xsd:date ;
+    :weekNumber 4 ;
+    :weekStart "2025-01-19"^^xsd:date .
+
+:IndEpi_2025_W05 a :IndicadorEpidemiologico ;
+    :casesDengue 742 ;
+    :casesDengueAlarm 7 ;
+    :casesDengueSevere 0 ;
+    :weekEnd "2025-02-01"^^xsd:date ;
+    :weekNumber 5 ;
+    :weekStart "2025-01-26"^^xsd:date .
+
+:IndEpi_2025_W06 a :IndicadorEpidemiologico ;
+    :casesDengue 834 ;
+    :casesDengueAlarm 7 ;
+    :casesDengueSevere 2 ;
+    :weekEnd "2025-02-08"^^xsd:date ;
+    :weekNumber 6 ;
+    :weekStart "2025-02-02"^^xsd:date .
+
+:IndEpi_2025_W07 a :IndicadorEpidemiologico ;
+    :casesDengue 1074 ;
+    :casesDengueAlarm 9 ;
+    :casesDengueSevere 2 ;
+    :weekEnd "2025-02-15"^^xsd:date ;
+    :weekNumber 7 ;
+    :weekStart "2025-02-09"^^xsd:date .
+
+:IndEpi_2025_W08 a :IndicadorEpidemiologico ;
+    :casesDengue 1262 ;
+    :casesDengueAlarm 13 ;
+    :casesDengueSevere 1 ;
+    :weekEnd "2025-02-22"^^xsd:date ;
+    :weekNumber 8 ;
+    :weekStart "2025-02-16"^^xsd:date .
+
+:IndEpi_2025_W09 a :IndicadorEpidemiologico ;
+    :casesDengue 1568 ;
+    :casesDengueAlarm 21 ;
+    :casesDengueSevere 1 ;
+    :weekEnd "2025-03-01"^^xsd:date ;
+    :weekNumber 9 ;
+    :weekStart "2025-02-23"^^xsd:date .
+
+:IndEpi_2025_W10 a :IndicadorEpidemiologico ;
+    :casesDengue 1901 ;
+    :casesDengueAlarm 20 ;
+    :casesDengueSevere 1 ;
+    :weekEnd "2025-03-08"^^xsd:date ;
+    :weekNumber 10 ;
+    :weekStart "2025-03-02"^^xsd:date .
+
+:IndEpi_2025_W11 a :IndicadorEpidemiologico ;
+    :casesDengue 2667 ;
+    :casesDengueAlarm 44 ;
+    :casesDengueSevere 3 ;
+    :weekEnd "2025-03-15"^^xsd:date ;
+    :weekNumber 11 ;
+    :weekStart "2025-03-09"^^xsd:date .
+
+:IndEpi_2025_W12 a :IndicadorEpidemiologico ;
+    :casesDengue 3230 ;
+    :casesDengueAlarm 61 ;
+    :casesDengueSevere 3 ;
+    :weekEnd "2025-03-22"^^xsd:date ;
+    :weekNumber 12 ;
+    :weekStart "2025-03-16"^^xsd:date .
+
+:IndEpi_2025_W13 a :IndicadorEpidemiologico ;
+    :casesDengue 3554 ;
+    :casesDengueAlarm 77 ;
+    :casesDengueSevere 4 ;
+    :weekEnd "2025-03-29"^^xsd:date ;
+    :weekNumber 13 ;
+    :weekStart "2025-03-23"^^xsd:date .
+
+:IndEpi_2025_W14 a :IndicadorEpidemiologico ;
+    :casesDengue 3775 ;
+    :casesDengueAlarm 69 ;
+    :casesDengueSevere 3 ;
+    :weekEnd "2025-04-05"^^xsd:date ;
+    :weekNumber 14 ;
+    :weekStart "2025-03-30"^^xsd:date .
+
+:IndEpi_2025_W15 a :IndicadorEpidemiologico ;
+    :casesDengue 3506 ;
+    :casesDengueAlarm 48 ;
+    :casesDengueSevere 2 ;
+    :weekEnd "2025-04-12"^^xsd:date ;
+    :weekNumber 15 ;
+    :weekStart "2025-04-06"^^xsd:date .
+
+:IndEpi_2025_W16 a :IndicadorEpidemiologico ;
+    :casesDengue 3096 ;
+    :casesDengueAlarm 37 ;
+    :casesDengueSevere 3 ;
+    :weekEnd "2025-04-19"^^xsd:date ;
+    :weekNumber 16 ;
+    :weekStart "2025-04-13"^^xsd:date .
+
+:IndEpi_2025_W17 a :IndicadorEpidemiologico ;
+    :casesDengue 3270 ;
+    :casesDengueAlarm 51 ;
+    :casesDengueSevere 4 ;
+    :weekEnd "2025-04-26"^^xsd:date ;
+    :weekNumber 17 ;
+    :weekStart "2025-04-20"^^xsd:date .
+
+:IndEpi_2025_W18 a :IndicadorEpidemiologico ;
+    :casesDengue 2758 ;
+    :casesDengueAlarm 62 ;
+    :casesDengueSevere 0 ;
+    :weekEnd "2025-05-03"^^xsd:date ;
+    :weekNumber 18 ;
+    :weekStart "2025-04-27"^^xsd:date .
+
+:IndEpi_2025_W19 a :IndicadorEpidemiologico ;
+    :casesDengue 2774 ;
+    :casesDengueAlarm 41 ;
+    :casesDengueSevere 2 ;
+    :weekEnd "2025-05-10"^^xsd:date ;
+    :weekNumber 19 ;
+    :weekStart "2025-05-04"^^xsd:date .
+
+:IndEpi_2025_W20 a :IndicadorEpidemiologico ;
+    :casesDengue 2087 ;
+    :casesDengueAlarm 37 ;
+    :casesDengueSevere 3 ;
+    :weekEnd "2025-05-17"^^xsd:date ;
+    :weekNumber 20 ;
+    :weekStart "2025-05-11"^^xsd:date .
+
+:IndEpi_2025_W21 a :IndicadorEpidemiologico ;
+    :casesDengue 1643 ;
+    :casesDengueAlarm 26 ;
+    :casesDengueSevere 2 ;
+    :weekEnd "2025-05-24"^^xsd:date ;
+    :weekNumber 21 ;
+    :weekStart "2025-05-18"^^xsd:date .
+
+:IndEpi_2025_W22 a :IndicadorEpidemiologico ;
+    :casesDengue 1329 ;
+    :casesDengueAlarm 17 ;
+    :casesDengueSevere 2 ;
+    :weekEnd "2025-05-31"^^xsd:date ;
+    :weekNumber 22 ;
+    :weekStart "2025-05-25"^^xsd:date .
+
+:IndEpi_2025_W23 a :IndicadorEpidemiologico ;
+    :casesDengue 1014 ;
+    :casesDengueAlarm 18 ;
+    :casesDengueSevere 0 ;
+    :weekEnd "2025-06-07"^^xsd:date ;
+    :weekNumber 23 ;
+    :weekStart "2025-06-01"^^xsd:date .
+
+:IndEpi_2025_W24 a :IndicadorEpidemiologico ;
+    :casesDengue 436 ;
+    :casesDengueAlarm 10 ;
+    :casesDengueSevere 1 ;
+    :weekEnd "2025-06-14"^^xsd:date ;
+    :weekNumber 24 ;
+    :weekStart "2025-06-08"^^xsd:date .
+
+:IndEpi_2025_W25 a :IndicadorEpidemiologico ;
+    :weekEnd "2025-06-21"^^xsd:date ;
+    :weekNumber 25 ;
+    :weekStart "2025-06-15"^^xsd:date .
+
+:IndEpi_2025_W26 a :IndicadorEpidemiologico ;
+    :weekEnd "2025-06-28"^^xsd:date ;
+    :weekNumber 26 ;
+    :weekStart "2025-06-22"^^xsd:date .
+
+:IndEpi_2025_W53 a :IndicadorEpidemiologico ;
+    :weekEnd "2026-01-03"^^xsd:date ;
+    :weekNumber 53 ;
+    :weekStart "2025-12-28"^^xsd:date .
+
+:InfograficoVacina a :RecursoEducacional ;
+    :temNota 3 ;
+    :temTipo "infografico" .
+
+:JogoEducativo a :RecursoEducacional ;
+    :temNota 4 ;
+    :temTipo "jogo" .
+
+:TamparCaixasDAgua a :Prevencao ;
+    rdfs:label "Tampar caixas d'água" ;
+    :descricao "Mantenha as caixas d'água sempre fechadas com tampa adequada." ;
+    :previneContra :Chikungunya,
+        :Dengue,
+        :Zika .
+
+:UsarRepelente a :Prevencao ;
+    rdfs:label "Usar repelente" ;
+    :descricao "Aplicar repelente nas áreas expostas do corpo para evitar picadas." ;
+    :previneContra :Chikungunya,
+        :Dengue,
+        :Zika .
+
+:VacinarContraFebreAmarela a :Prevencao ;
+    rdfs:label "Vacinar contra febre amarela" ;
+    :descricao "A vacina é a forma mais eficaz de prevenção contra a febre amarela." ;
+    :previneContra :FebreAmarela .
+
+:VideoCombate a :RecursoEducacional ;
+    :temNota 5 ;
+    :temTipo "video" .
+
+:VideoVacina a :RecursoEducacional ;
+    :temNota 4 ;
+    :temTipo "video" .
+
+:casesDengue a owl:DatatypeProperty ;
+    rdfs:domain :IndicadorEpidemiologico ;
+    rdfs:range xsd:int .
+
+:casesDengueAlarm a owl:DatatypeProperty ;
+    rdfs:domain :IndicadorEpidemiologico ;
+    rdfs:range xsd:int .
+
+:casesDengueSevere a owl:DatatypeProperty ;
+    rdfs:domain :IndicadorEpidemiologico ;
+    rdfs:range xsd:int .
+
+:regiao_ipiranga a :Regiao ;
+    :temBairro "Ipiranga" ;
+    :temCidade "São Paulo" ;
+    :temLatitude -23.5854 ;
+    :temLongitude -46.6109 .
+
+:regiao_mooca a :Regiao ;
+    :temBairro "Mooca" ;
+    :temCidade "São Paulo" ;
+    :temLatitude -23.5548 ;
+    :temLongitude -46.5911 .
+
+:regiao_pinheiros a :Regiao ;
+    :temBairro "Pinheiros" ;
+    :temCidade "São Paulo" ;
+    :temLatitude -23.5614 ;
+    :temLongitude -46.6790 .
+
+:regiao_santana a :Regiao ;
+    :temBairro "Santana" ;
+    :temCidade "São Paulo" ;
+    :temLatitude -23.5000 ;
+    :temLongitude -46.6242 .
+
+:regiao_vilamariana a :Regiao ;
+    :temBairro "Vila Mariana" ;
+    :temCidade "São Paulo" ;
+    :temLatitude -23.5896 ;
+    :temLongitude -46.6325 .
+
+:sintoma_dor_articular a :Sintoma ;
+    rdfs:label "Dor nas articulações"@pt .
+
+:sintoma_dor_cabeca a :Sintoma ;
+    rdfs:label "Dor de cabeça"@pt .
+
+:sintoma_dor_muscular a :Sintoma ;
+    rdfs:label "Dor muscular"@pt .
+
+:sintoma_dor_olhos a :Sintoma ;
+    rdfs:label "Dor atrás dos olhos"@pt .
+
+:sintoma_fadiga a :Sintoma ;
+    rdfs:label "Cansaço ou fadiga"@pt .
+
+:sintoma_febre a :Sintoma ;
+    rdfs:label "Febre alta"@pt .
+
+:sintoma_manchas a :Sintoma ;
+    rdfs:label "Manchas vermelhas na pele"@pt .
+
+:sintoma_nausea a :Sintoma ;
+    rdfs:label "Náusea ou vômito"@pt .
+
+:sintoma_sangramento a :Sintoma ;
+    rdfs:label "Sangramentos leves (gengivas, nariz)"@pt .
+
+:tratamento_analgesico a :Tratamento ;
+    rdfs:label "Uso de analgésicos"@pt ;
+    :descricao "Utilização de paracetamol ou dipirona para controle de febre e dores. Evitar anti-inflamatórios como AAS e ibuprofeno." .
+
+:tratamento_hidratacao a :Tratamento ;
+    rdfs:label "Hidratação oral ou venosa"@pt ;
+    :descricao "Ingestão de líquidos é essencial para evitar a desidratação, uma das principais causas de complicações na dengue." .
+
+:tratamento_hospitalar a :Tratamento ;
+    rdfs:label "Internação hospitalar"@pt ;
+    :descricao "Recomendado em casos de dengue com sinais de alarme ou grave, com suporte intensivo." .
+
+:tratamento_monitoramento a :Tratamento ;
+    rdfs:label "Monitoramento clínico"@pt ;
+    :descricao "Acompanhamento médico regular para avaliar sinais de alarme ou agravamento." .
+
+:tratamento_repouso a :Tratamento ;
+    rdfs:label "Repouso absoluto"@pt ;
+    :descricao "Repousar ajuda o organismo a se recuperar mais rapidamente." .
+
+:usuarioana a :Usuario ;
+    :temEmail "ana@example.com" ;
+    :temIdade 28,
+        30 ;
+    :temNome "Ana" ;
+    :temPreferenciaTipo "video" .
+
+:usuariobruno a :Usuario ;
+    :temEmail "bruno@example.com" ;
+    :temIdade 30,
+        31 ;
+    :temNome "Bruno" ;
+    :temPreferenciaTipo "jogo" .
+
+:usuarioclara a :Usuario ;
+    :temEmail "clara@example.com" ;
+    :temIdade 22,
+        23 ;
+    :temNome "Clara" ;
+    :temPreferenciaTipo "video" .
+
+:usuariodaniel a :Usuario ;
+    :temEmail "daniel@example.com" ;
+    :temIdade 40,
+        42 ;
+    :temNome "Daniel" ;
+    :temPreferenciaTipo "infografico" .
+
+:usuarioeduarda a :Usuario ;
+    :temEmail "eduarda@example.com" ;
+    :temIdade 25 ;
+    :temNome "Eduarda" ;
+    :temPreferenciaTipo "jogo" .
+
+:usuariofelipe a :Usuario ;
+    :temEmail "felipe@example.com" ;
+    :temIdade 38 ;
+    :temNome "Felipe" ;
+    :temPreferenciaTipo "video" .
+
+:usuariogabriel a :Usuario ;
+    :temEmail "gabriel@example.com" ;
+    :temIdade 34 ;
+    :temNome "Gabriel" ;
+    :temPreferenciaTipo "infografico" .
+
+:usuariohelena a :Usuario ;
+    :temEmail "helena@example.com" ;
+    :temIdade 23 ;
+    :temNome "Helena" ;
+    :temPreferenciaTipo "video" .
+
+:usuarioigor a :Usuario ;
+    :temEmail "igor@example.com" ;
+    :temIdade 12,
+        30 ;
+    :temNome "Igor" ;
+    :temPreferenciaTipo "jogo",
+        "video" .
+
+:usuariojuliana a :Usuario ;
+    :temEmail "juliana@example.com" ;
+    :temIdade 28 ;
+    :temNome "Juliana" ;
+    :temPreferenciaTipo "infografico" .
+
+:vetor_aedes_aegypti a :Vetor ;
+    rdfs:label "Aedes aegypti"@pt ;
+    :caracteristica "Tem hábitos diurnos e se reproduz em água parada." ;
+    :nomeCientifico "Aedes aegypti" ;
+    :transmite :chikungunya,
+        :dengue,
+        :zika .
+
+:vetor_aedes_albopictus a :Vetor ;
+    rdfs:label "Aedes albopictus"@pt ;
+    :caracteristica "Também conhecido como mosquito-tigre, vive em áreas mais sombreadas." ;
+    :nomeCientifico "Aedes albopictus" ;
+    :transmite :chikungunya,
+        :zika .
+
+:vetor_haemagogus a :Vetor ;
+    rdfs:label "Haemagogus spp."@pt ;
+    :caracteristica "Mosquito silvestre, transmissor da febre amarela nas matas." ;
+    :nomeCientifico "Haemagogus spp." ;
+    :transmite :febreAmarela .
+
+:virus_chikungunya a :Virus ;
+    rdfs:label "Vírus Chikungunya"@pt ;
+    :causa :chikungunya ;
+    :nomeCientifico "CHIKV" ;
+    :possuiFamilia "Togaviridae" .
+
+:virus_dengue a :Virus ;
+    rdfs:label "Vírus da Dengue"@pt ;
+    :causa :dengue ;
+    :nomeCientifico "DENV" ;
+    :possuiSorotipo "DENV-1",
+        "DENV-2",
+        "DENV-3",
+        "DENV-4" .
+
+:virus_febre_amarela a :Virus ;
+    rdfs:label "Vírus da Febre Amarela"@pt ;
+    :causa :febreAmarela ;
+    :nomeCientifico "YFV" ;
+    :possuiFamilia "Flaviviridae" .
+
+:virus_zika a :Virus ;
+    rdfs:label "Vírus Zika"@pt ;
+    :causa :zika ;
+    :nomeCientifico "ZIKV" ;
+    :possuiFamilia "Flaviviridae" .
+
+:weekEnd a owl:DatatypeProperty ;
+    rdfs:domain :IndicadorEpidemiologico ;
+    rdfs:range xsd:date .
+
+:weekNumber a owl:DatatypeProperty ;
+    rdfs:domain :IndicadorEpidemiologico ;
+    rdfs:range xsd:int .
+
+:weekStart a owl:DatatypeProperty ;
+    rdfs:domain :IndicadorEpidemiologico ;
+    rdfs:range xsd:date .
+
+:FebreAmarela a :Arbovirose ;
+    rdfs:label "Febre Amarela" ;
+    :temAgenteEtiologico "Flavivírus (vírus da febre amarela)" ;
+    :temSintoma "Icterícia, febre, dores musculares, vômitos" ;
+    :transmitidaPor "Haemagogus, Sabethes e Aedes aegypti (em área urbana)" .
+
+:Chikungunya a :Arbovirose ;
+    rdfs:label "Chikungunya" ;
+    :temAgenteEtiologico "CHIKV (vírus Chikungunya)" ;
+    :temSintoma "Dor articular intensa, febre, fadiga, náusea" ;
+    :transmitidaPor "Aedes aegypti e Aedes albopictus" .
+
+:Vetor a owl:Class .
+
+:Arbovirose a owl:Class .
+
+:Dengue a :Arbovirose ;
+    rdfs:label "Dengue" ;
+    :temAgenteEtiologico "DENV (vírus da dengue)" ;
+    :temSintoma "Febre alta, dor muscular, dor atrás dos olhos, manchas na pele" ;
+    :transmitidaPor "Aedes aegypti" .
+
+:Virus a owl:Class .
+
+:Zika a :Arbovirose ;
+    rdfs:label "Zika" ;
+    :temAgenteEtiologico "ZIKV (vírus Zika)" ;
+    :temSintoma "Coceira, manchas vermelhas, febre baixa, conjuntivite" ;
+    :transmitidaPor "Aedes aegypti" .
+
+:Prevencao a owl:Class .
+
+:Regiao a owl:Class .
+
+:Tratamento a owl:Class .
+
+:Sintoma a owl:Class .
+
