@@ -197,6 +197,11 @@ SELECT ?usuario ?tipo WHERE {
 }
 ```
 
+## Comandos para exportar os dados (cmd do windows) do apache jena fuseki para arquivo dados.ttl
+
+curl -H "Accept: text/turtle" --data-urlencode "query=CONSTRUCT { ?s ?p ?o } WHERE { ?s ?p ?o }" http://localhost:3030/arboviroses/query -o dados.ttl
+
+
 ## Referências
 
 https://portalsinan.saude.gov.br/dados-epidemiologicos-sinan
