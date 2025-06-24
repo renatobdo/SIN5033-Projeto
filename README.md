@@ -196,6 +196,21 @@ SELECT ?usuario ?tipo WHERE {
   ?usuario :temPreferenciaTipo ?tipo .
 }
 ```
+## Consulta Semanas epidemiológicas
+```
+PREFIX : <http://www.exemplo.org/arboviroses#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?semana ?casos ?sinaisAlarme ?casosGraves ?inicio ?fim WHERE {
+  ?semana a :IndicadorEpidemiologico ;
+          :casesDengue ?casos ;
+          :casesDengueAlarm ?sinaisAlarme ;
+          :casesDengueSevere ?casosGraves ;
+          :weekStart ?inicio ;
+          :weekEnd ?fim .
+}
+ORDER BY DESC(?fim)
+```
 
 ## Comandos para exportar os dados (cmd do windows) do apache jena fuseki para arquivo dados.ttl
 
