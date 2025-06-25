@@ -151,6 +151,18 @@ ORDER BY ?classe
 ```
 
 ## Consulta instâncias da classe usuário
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.exemplo.org/arboviroses#>
+
+SELECT DISTINCT ?usuario ?nome ?email ?dtnascimento WHERE {
+  ?usuario rdf:type :Usuario .
+  OPTIONAL { ?usuario :temNome ?nome . }
+  OPTIONAL { ?usuario :temEmail ?email . }
+  OPTIONAL { ?usuario :temDataNascimento ?dtnascimento . }
+}
+ORDER BY ?usuario
+```
 
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
