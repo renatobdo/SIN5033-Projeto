@@ -164,19 +164,6 @@ SELECT DISTINCT ?usuario ?nome ?email ?dtnascimento WHERE {
 ORDER BY ?usuario
 ```
 
-```sparql
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX : <http://www.exemplo.org/arboviroses#>
-
-SELECT DISTINCT ?usuario ?nome ?email ?idade WHERE {
-  ?usuario rdf:type :Usuario .
-  OPTIONAL { ?usuario :temNome ?nome . }
-  OPTIONAL { ?usuario :temEmail ?email . }
-  OPTIONAL { ?usuario :temIdade ?idade . }
-}
-ORDER BY ?usuario
-
-```
 
 ## Consulta recursos educacionais
 
