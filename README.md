@@ -130,6 +130,29 @@ O que faz:
 
     Exemplo: Se outro usuário também gosta de vídeos e deu nota 5 para um infográfico, esse infográfico será sugerido — mesmo que o usuário atual ainda não o tenha visto.
 
+```
+PREFIX : <http://www.exemplo.org/arboviroses#>
+
+SELECT DISTINCT ?recurso ?tipo ?nota ?nome ?email ?idade WHERE {
+  :renato :temPreferenciaTipo ?tipo_comum .
+
+  ?outro :temPreferenciaTipo ?tipo_comum .
+  FILTER (?outro != :renato)
+
+  ?outro :temPreferenciaTipo ?tipo .
+  FILTER NOT EXISTS { :renato :temPreferenciaTipo ?tipo }
+
+  ?recurso a :RecursoEducacional ;
+           :temTipo ?tipo ;
+           :temNota ?nota .
+
+  OPTIONAL { ?outro :temNome ?nome }
+  OPTIONAL { ?outro :temEmail ?email }
+  OPTIONAL { ?outro :temIdade ?idade }
+}
+ORDER BY DESC(?nota)
+LIMIT 5
+```
 
 ## Consulta classes existentes
 
