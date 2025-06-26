@@ -268,6 +268,9 @@ curl -H "Accept: text/turtle" --data-urlencode "query=CONSTRUCT { ?s ?p ?o } WHE
 
 Entre na pasta  C:\apache-jena-fuseki-5.4.0\run\databases e remova os databases
 
+## Conclusões
+Para trabalhos futuros pretende-se utilizar a região do usuário para realizar recomendações mais direcionadas. Por exemplo, caso um usuário seja do Ipiranga e lá tenha altos índices de dengue (300 casos por 100 mil habitantes) uma recomendação para epidemia e com base nas preferências do usuário (vídeo, por exemplo) serão disponibilizados. Os dados que serão coletados serão do SINAN, mas também da prefeitura de São Paulo, pois tem dados dos bairros.
+
 ## Referências
 
 https://portalsinan.saude.gov.br/dados-epidemiologicos-sinan
