@@ -284,3 +284,5 @@ https://docs.google.com/spreadsheets/d/1a46T0khfDvURwdXQ6CAovSgufJffJBhcW6mmBxSo
 https://nies.saude.sp.gov.br/ses/publico/dengue 
 
 https://portal.saude.sp.gov.br/resources/cve-centro-de-vigilancia-epidemiologica/areas-de-vigilancia/doencas-de-transmissao-por-vetores-e-zoonoses/doc/dengue/planodecontingeencia_arbo_2025_2026_sp_final-coupia.pdf
+
+https://prefeitura.sp.gov.br/web/saude/w/vigilancia_em_saude/boletim_covisa/267596
