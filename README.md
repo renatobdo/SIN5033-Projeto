@@ -153,6 +153,31 @@ SELECT DISTINCT ?recurso ?tipo ?nota ?nome ?email ?idade WHERE {
 ORDER BY DESC(?nota)
 LIMIT 5
 ```
+Na consulta o filtro:
+
+FILTER NOT EXISTS { :UsuarioX :temPreferenciaTipo ?tipo }
+
+faz com que o ?tipo considerado na recomendação seja um tipo que o outro usuário tem, mas que o :UsuarioX não tem. Ou seja:
+
+    Primeiro, encontra-se um tipo em comum entre :UsuarioX e ?outro → ?tipo_comum
+
+    Depois, procura-se por outros tipos (?tipo) que ?outro tem, mas :UsuarioX não tem (linha do FILTER NOT EXISTS)
+
+Portanto, ele só traz preferências diferentes das que :UsuarioX já tem. Se um outro usuário tiver apenas preferências iguais 
+às de :UsuarioX, ele não contribuirá com nenhum novo ?tipo e, portanto, não trará nenhuma recomendação.
+
+Por exemplo:
+
+Se :UsuarioX gosta de jogo e video, e :UsuarioY gosta de jogo, video e infografico:
+
+    ?tipo_comum = jogo, pois é comum.
+
+    ?tipo = infografico → válido, porque :UsuarioX não tem esse tipo.
+
+    Resultado: recursos do tipo infografico serão considerados.
+
+Se :UsuarioZ só gosta de jogo e video, iguais ao :UsuarioX, nenhum novo ?tipo será encontrado para recomendação.
+
 
 ## Consulta classes existentes
 
