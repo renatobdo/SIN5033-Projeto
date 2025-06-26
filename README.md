@@ -106,6 +106,7 @@ O que faz:
 
 ✅ 2. Recomendação por Colaboração
 
+A consulta por recomendação colaborativa semântica tem como objetivo sugerir recursos educacionais a um usuário com base em preferências compartilhadas com outros usuários, priorizando tipos de conteúdo ainda não acessados por ele.
 Para priorizar recursos de tipos que o usuário ainda não conhece, mas sem excluir os que ele já prefere, podemos usar uma subconsulta com um indicador binário (por exemplo, ?tipoNovo), atribuindo:
 
     1 para tipos novos (que o usuário ainda não tem preferência),
@@ -150,6 +151,35 @@ LIMIT 5
 
     O ORDER BY prioriza tipos novos e, entre eles, os com maior nota.
 
+Exemplo prático
+
+Imagine os seguintes usuários e preferências:
+
+    :helena prefere jogo, video
+
+    :igor prefere jogo, infografico
+
+    :ana prefere video, texto
+
+    :recurso1 é um jogo com nota 4
+
+    :recurso2 é um infografico com nota 5
+
+    :recurso3 é um texto com nota 3
+
+Resultado da consulta para :helena:
+
+    igor é semelhante a helena pois ambos gostam de jogo.
+
+    igor também gosta de infografico, que helena ainda não conhece → ?tipoNovo = 1
+
+    recurso2 (infográfico) será recomendado com prioridade, pois é novo.
+
+    recurso1 (jogo) também pode aparecer, mas com menor prioridade → ?tipoNovo = 0
+
+    ana é semelhante por video, mas texto já foi acessado por helena? Se não, entra como ?tipoNovo = 1.
+
+    
 ## Consulta classes existentes
 
 ```sparql
