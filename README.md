@@ -84,7 +84,7 @@ Objetivo: recomendar recursos educacionais que estejam alinhados com o tipo de r
 SPARQL usado:
 ```
 SELECT ?recurso ?tipo ?nota WHERE {
-  :usuario<nome> :temPreferenciaTipo ?tipo .
+  {user_uri} :temPreferenciaTipo ?tipo .
   ?recurso a :RecursoEducacional ;
            :temTipo ?tipo ;
            :temNota ?nota .
@@ -106,78 +106,49 @@ O que faz:
 
 ✅ 2. Recomendação por Colaboração
 
-Objetivo: recomendar recursos que foram acessados por outros usuários com as mesmas preferências.
-SPARQL usado:
-```
-SELECT ?recurso ?tipo ?nota WHERE {
-  :usuario<nome> :temPreferenciaTipo ?tipo .
-  ?outroUsuario :temPreferenciaTipo ?tipo .
-  FILTER(?outroUsuario != :usuario<nome>)
-  ?recurso a :RecursoEducacional ;
-           :temTipo ?tipo ;
-           :temNota ?nota .
-}
-ORDER BY DESC(?nota)
-LIMIT 5
-```
-O que faz:
+Para priorizar recursos de tipos que o usuário ainda não conhece, mas sem excluir os que ele já prefere, podemos usar uma subconsulta com um indicador binário (por exemplo, ?tipoNovo), atribuindo:
 
-    Identifica outros usuários que compartilham o mesmo tipo de preferência do usuário logado.
+    1 para tipos novos (que o usuário ainda não tem preferência),
 
-    Recupera os recursos que esses outros usuários também acessaram com esse tipo.
+    0 para tipos já preferidos.
 
-    Ordena pela nota e retorna até 5.
+Assim, podemos ordenar primeiro pelos tipos novos (?tipoNovo DESC), depois pela nota (?nota DESC).
 
-    Exemplo: Se outro usuário também gosta de vídeos e deu nota 5 para um infográfico, esse infográfico será sugerido — mesmo que o usuário atual ainda não o tenha visto.
+✅ Consulta com priorização de tipos novos:
 
 ```
+q_colab = f"""
 PREFIX : <http://www.exemplo.org/arboviroses#>
 
-SELECT DISTINCT ?recurso ?tipo ?nota ?nome ?email ?idade WHERE {
-  :renato :temPreferenciaTipo ?tipo_comum .
-
+SELECT DISTINCT ?recurso ?tipo ?nota ?nome ?email ?idade ?tipoNovo WHERE {{
+  {user_uri} :temPreferenciaTipo ?tipo_comum .
   ?outro :temPreferenciaTipo ?tipo_comum .
-  FILTER (?outro != :renato)
+  FILTER (?outro != {user_uri})
 
   ?outro :temPreferenciaTipo ?tipo .
-  FILTER NOT EXISTS { :renato :temPreferenciaTipo ?tipo }
 
   ?recurso a :RecursoEducacional ;
            :temTipo ?tipo ;
            :temNota ?nota .
 
-  OPTIONAL { ?outro :temNome ?nome }
-  OPTIONAL { ?outro :temEmail ?email }
-  OPTIONAL { ?outro :temIdade ?idade }
-}
-ORDER BY DESC(?nota)
+  OPTIONAL {{ ?outro :temNome ?nome }}
+  OPTIONAL {{ ?outro :temEmail ?email }}
+  OPTIONAL {{ ?outro :temIdade ?idade }}
+
+  BIND(IF(EXISTS {{ {user_uri} :temPreferenciaTipo ?tipo }}, 0, 1) AS ?tipoNovo)
+}}
+ORDER BY DESC(?tipoNovo) DESC(?nota)
 LIMIT 5
+"""
 ```
-Na consulta o filtro:
 
-FILTER NOT EXISTS { :UsuarioX :temPreferenciaTipo ?tipo }
+🔍 Explicação:
 
-faz com que o ?tipo considerado na recomendação seja um tipo que o outro usuário tem, mas que o :UsuarioX não tem. Ou seja:
+    ?tipoNovo = 1 → tipo que o usuário ainda não tem.
 
-    Primeiro, encontra-se um tipo em comum entre :UsuarioX e ?outro → ?tipo_comum
+    ?tipoNovo = 0 → tipo já conhecido do usuário.
 
-    Depois, procura-se por outros tipos (?tipo) que ?outro tem, mas :UsuarioX não tem (linha do FILTER NOT EXISTS)
-
-Portanto, ele só traz preferências diferentes das que :UsuarioX já tem. Se um outro usuário tiver apenas preferências iguais 
-às de :UsuarioX, ele não contribuirá com nenhum novo ?tipo e, portanto, não trará nenhuma recomendação.
-
-Por exemplo:
-
-Se :UsuarioX gosta de jogo e video, e :UsuarioY gosta de jogo, video e infografico:
-
-    ?tipo_comum = jogo, pois é comum.
-
-    ?tipo = infografico → válido, porque :UsuarioX não tem esse tipo.
-
-    Resultado: recursos do tipo infografico serão considerados.
-
-Se :UsuarioZ só gosta de jogo e video, iguais ao :UsuarioX, nenhum novo ?tipo será encontrado para recomendação.
-
+    O ORDER BY prioriza tipos novos e, entre eles, os com maior nota.
 
 ## Consulta classes existentes
 
