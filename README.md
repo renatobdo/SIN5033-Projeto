@@ -288,3 +288,5 @@ https://portal.saude.sp.gov.br/resources/cve-centro-de-vigilancia-epidemiologica
 https://prefeitura.sp.gov.br/web/saude/w/vigilancia_em_saude/boletim_covisa/267596
 
 https://g1.globo.com/sp/sao-paulo/noticia/2025/05/22/mortes-por-dengue-na-cidade-de-sp-sobem-para-14-itaim-bibi-e-outros-44-bairros-tem-epidemia-da-doenca.ghtml
+
+https://portalsinan.saude.gov.br/calendario-epidemiologico
