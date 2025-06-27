@@ -1,0 +1,934 @@
+PREFIX :     <http://www.exemplo.org/arboviroses#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xml:  <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+:Regiao_43  rdf:type  :Regiao;
+        rdfs:label  "IGUATEMI"@pt;
+        :temCRS     "LESTE";
+        :temDA      "IGUATEMI";
+        :temINC     "368.2"^^xsd:float;
+        :temNCC     "572"^^xsd:int;
+        :temUVIS    "São Mateus" .
+
+:Regiao_42  rdf:type  :Regiao;
+        rdfs:label  "VILA MEDEIROS"@pt;
+        :temCRS     "NORTE";
+        :temDA      "VILA MEDEIROS";
+        :temINC     "350.3"^^xsd:float;
+        :temNCC     "429"^^xsd:int;
+        :temUVIS    "Vila Maria" .
+
+:Regiao_41  rdf:type  :Regiao;
+        rdfs:label  "VILA MARIA"@pt;
+        :temCRS     "NORTE";
+        :temDA      "VILA MARIA";
+        :temINC     "269.7"^^xsd:float;
+        :temNCC     "308"^^xsd:int;
+        :temUVIS    "Vila Maria" .
+
+:Regiao_40  rdf:type  :Regiao;
+        rdfs:label  "VILA GUILHERME"@pt;
+        :temCRS     "NORTE";
+        :temDA      "VILA GUILHERME";
+        :temINC     "354.9"^^xsd:float;
+        :temNCC     "204"^^xsd:int;
+        :temUVIS    "Vila Maria" .
+
+:Regiao_39  rdf:type  :Regiao;
+        rdfs:label  "TUCURUVI"@pt;
+        :temCRS     "NORTE";
+        :temDA      "TUCURUVI";
+        :temINC     "505.9"^^xsd:float;
+        :temNCC     "483"^^xsd:int;
+        :temUVIS    "Santana" .
+
+:Regiao_38  rdf:type  :Regiao;
+        rdfs:label  "MANDAQUI"@pt;
+        :temCRS     "NORTE";
+        :temDA      "MANDAQUI";
+        :temINC     "428.8"^^xsd:float;
+        :temNCC     "469"^^xsd:int;
+        :temUVIS    "Santana" .
+
+:Regiao_37  rdf:type  :Regiao;
+        rdfs:label  "SANTANA"@pt;
+        :temCRS     "NORTE";
+        :temDA      "SANTANA";
+        :temINC     "440.4"^^xsd:float;
+        :temNCC     "491"^^xsd:int;
+        :temUVIS    "Santana" .
+
+:Regiao_36  rdf:type  :Regiao;
+        rdfs:label  "SÃO DOMINGOS"@pt;
+        :temCRS     "NORTE";
+        :temDA      "SÃO DOMINGOS";
+        :temINC     "791.2"^^xsd:float;
+        :temNCC     "686"^^xsd:int;
+        :temUVIS    "Pirituba" .
+
+:Regiao_35  rdf:type  :Regiao;
+        rdfs:label  "PIRITUBA"@pt;
+        :temCRS     "NORTE";
+        :temDA      "PIRITUBA";
+        :temINC     "727.9"^^xsd:float;
+        :temNCC     "1249"^^xsd:int;
+        :temUVIS    "Pirituba" .
+
+:Regiao_34  rdf:type  :Regiao;
+        rdfs:label  "JARAGUÁ"@pt;
+        :temCRS     "NORTE";
+        :temDA      "JARAGUÁ";
+        :temINC     "370.2"^^xsd:float;
+        :temNCC     "810"^^xsd:int;
+        :temUVIS    "Pirituba" .
+
+:Regiao_33  rdf:type  :Regiao;
+        rdfs:label  "PERUS"@pt;
+        :temCRS     "NORTE";
+        :temDA      "PERUS";
+        :temINC     "959.4"^^xsd:float;
+        :temNCC     "880"^^xsd:int;
+        :temUVIS    "Perus" .
+
+:Regiao_32  rdf:type  :Regiao;
+        rdfs:label  "ANHANGUERA"@pt;
+        :temCRS     "NORTE";
+        :temDA      "ANHANGUERA";
+        :temINC     "378.9"^^xsd:float;
+        :temNCC     "336"^^xsd:int;
+        :temUVIS    "Perus" .
+
+:Regiao_31  rdf:type  :Regiao;
+        rdfs:label  "TREMEMBÉ"@pt;
+        :temCRS     "NORTE";
+        :temDA      "TREMEMBÉ";
+        :temINC     "352.6"^^xsd:float;
+        :temNCC     "809"^^xsd:int;
+        :temUVIS    "Jacanã" .
+
+:Regiao_30  rdf:type  :Regiao;
+        rdfs:label  "JAÇANÃ"@pt;
+        :temCRS     "NORTE";
+        :temDA      "JAÇANÃ";
+        :temINC     "399.3"^^xsd:float;
+        :temNCC     "385"^^xsd:int;
+        :temUVIS    "Jacanã" .
+
+:Regiao_29  rdf:type  :Regiao;
+        rdfs:label  "FREGUESIA DO Ó"@pt;
+        :temCRS     "NORTE";
+        :temDA      "FREGUESIA DO Ó";
+        :temINC     "872.4"^^xsd:float;
+        :temNCC     "1219"^^xsd:int;
+        :temUVIS    "Freguesia do Ó/Brasilândia" .
+
+:Regiao_28  rdf:type  :Regiao;
+        rdfs:label  "BRASILÂNDIA"@pt;
+        :temCRS     "NORTE";
+        :temDA      "BRASILÂNDIA";
+        :temINC     "962.3"^^xsd:float;
+        :temNCC     "2762"^^xsd:int;
+        :temUVIS    "Freguesia do Ó/Brasilândia" .
+
+:Regiao_27  rdf:type  :Regiao;
+        rdfs:label  "LIMÃO"@pt;
+        :temCRS     "NORTE";
+        :temDA      "LIMÃO";
+        :temINC     "681.4"^^xsd:float;
+        :temNCC     "543"^^xsd:int;
+        :temUVIS    "Cachoeirinha" .
+
+:Regiao_26  rdf:type  :Regiao;
+        rdfs:label  "CASA VERDE"@pt;
+        :temCRS     "NORTE";
+        :temDA      "CASA VERDE";
+        :temINC     "927.0"^^xsd:float;
+        :temNCC     "796"^^xsd:int;
+        :temUVIS    "Cachoeirinha" .
+
+:Regiao_25  rdf:type  :Regiao;
+        rdfs:label  "CACHOEIRINHA"@pt;
+        :temCRS     "NORTE";
+        :temDA      "CACHOEIRINHA";
+        :temINC     "782.7"^^xsd:float;
+        :temNCC     "1157"^^xsd:int;
+        :temUVIS    "Cachoeirinha" .
+
+:Regiao_24  rdf:type  :Regiao;
+        rdfs:label  "VILA JACUÍ"@pt;
+        :temCRS     "LESTE";
+        :temDA      "VILA JACUÍ";
+        :temINC     "219.5"^^xsd:float;
+        :temNCC     "323"^^xsd:int;
+        :temUVIS    "São Miguel" .
+
+:Regiao_23  rdf:type  :Regiao;
+        rdfs:label  "SÃO MIGUEL"@pt;
+        :temCRS     "LESTE";
+        :temDA      "SÃO MIGUEL";
+        :temINC     "346.0"^^xsd:float;
+        :temNCC     "307"^^xsd:int;
+        :temUVIS    "São Miguel" .
+
+:Regiao_22  rdf:type  :Regiao;
+        rdfs:label  "JARDIM HELENA"@pt;
+        :temCRS     "LESTE";
+        :temDA      "JARDIM HELENA";
+        :temINC     "539.7"^^xsd:float;
+        :temNCC     "739"^^xsd:int;
+        :temUVIS    "São Miguel" .
+
+:Regiao_21  rdf:type  :Regiao;
+        rdfs:label  "SÃO RAFAEL"@pt;
+        :temCRS     "LESTE";
+        :temDA      "SÃO RAFAEL";
+        :temINC     "423.2"^^xsd:float;
+        :temNCC     "693"^^xsd:int;
+        :temUVIS    "São Mateus" .
+
+:Regiao_20  rdf:type  :Regiao;
+        rdfs:label  "SÃO MATEUS"@pt;
+        :temCRS     "LESTE";
+        :temDA      "SÃO MATEUS";
+        :temINC     "210.0"^^xsd:float;
+        :temNCC     "278"^^xsd:int;
+        :temUVIS    "São Mateus" .
+
+:Regiao_19  rdf:type  :Regiao;
+        rdfs:label  "PARQUE DO CARMO"@pt;
+        :temCRS     "LESTE";
+        :temDA      "PARQUE DO CARMO";
+        :temINC     "246.5"^^xsd:float;
+        :temNCC     "179"^^xsd:int;
+        :temUVIS    "Itaquera" .
+
+:Regiao_18  rdf:type  :Regiao;
+        rdfs:label  "JOSÉ BONIFÁCIO"@pt;
+        :temCRS     "LESTE";
+        :temDA      "JOSÉ BONIFÁCIO";
+        :temINC     "272.5"^^xsd:float;
+        :temNCC     "379"^^xsd:int;
+        :temUVIS    "Itaquera" .
+
+:Regiao_17  rdf:type  :Regiao;
+        rdfs:label  "ITAQUERA"@pt;
+        :temCRS     "LESTE";
+        :temDA      "ITAQUERA";
+        :temINC     "303.5"^^xsd:float;
+        :temNCC     "648"^^xsd:int;
+        :temUVIS    "Itaquera" .
+
+:Regiao_16  rdf:type  :Regiao;
+        rdfs:label  "CIDADE LÍDER"@pt;
+        :temCRS     "LESTE";
+        :temDA      "CIDADE LÍDER";
+        :temINC     "306.7"^^xsd:float;
+        :temNCC     "421"^^xsd:int;
+        :temUVIS    "Itaquera" .
+
+:Regiao_15  rdf:type  :Regiao;
+        rdfs:label  "VILA CURUÇA"@pt;
+        :temCRS     "LESTE";
+        :temDA      "VILA CURUÇA";
+        :temINC     "275.3"^^xsd:float;
+        :temNCC     "428"^^xsd:int;
+        :temUVIS    "Itaim Paulista" .
+
+:Regiao_14  rdf:type  :Regiao;
+        rdfs:label  "ITAIM PAULISTA"@pt;
+        :temCRS     "LESTE";
+        :temDA      "ITAIM PAULISTA";
+        :temINC     "252.5"^^xsd:float;
+        :temNCC     "602"^^xsd:int;
+        :temUVIS    "Itaim Paulista" .
+
+:Regiao_13  rdf:type  :Regiao;
+        rdfs:label  "LAJEADO"@pt;
+        :temCRS     "LESTE";
+        :temDA      "LAJEADO";
+        :temINC     "194.6"^^xsd:float;
+        :temNCC     "346"^^xsd:int;
+        :temUVIS    "Guaianases" .
+
+:Regiao_12  rdf:type  :Regiao;
+        rdfs:label  "GUAIANASES"@pt;
+        :temCRS     "LESTE";
+        :temDA      "GUAIANASES";
+        :temINC     "421.0"^^xsd:float;
+        :temNCC     "470"^^xsd:int;
+        :temUVIS    "Guaianases" .
+
+:Regiao_11  rdf:type  :Regiao;
+        rdfs:label  "PONTE RASA"@pt;
+        :temCRS     "LESTE";
+        :temDA      "PONTE RASA";
+        :temINC     "250.1"^^xsd:float;
+        :temNCC     "223"^^xsd:int;
+        :temUVIS    "Ermelino Matarazzo" .
+
+:Regiao_10  rdf:type  :Regiao;
+        rdfs:label  "ERMELINO"@pt;
+        :temCRS     "LESTE";
+        :temDA      "ERMELINO";
+        :temINC     "199.4"^^xsd:float;
+        :temNCC     "239"^^xsd:int;
+        :temUVIS    "Ermelino Matarazzo" .
+
+:Regiao_9  rdf:type  :Regiao;
+        rdfs:label  "CIDADE TIRADENTES"@pt;
+        :temCRS     "LESTE";
+        :temDA      "CIDADE TIRADENTES";
+        :temINC     "454.6"^^xsd:float;
+        :temNCC     "1102"^^xsd:int;
+        :temUVIS    "Cidade Tiradentes" .
+
+:Regiao_8  rdf:type  :Regiao;
+        rdfs:label  "SÉ"@pt;
+        :temCRS     "CENTRO";
+        :temDA      "SÉ";
+        :temINC     "293.7"^^xsd:float;
+        :temNCC     "80"^^xsd:int;
+        :temUVIS    "Sé" .
+
+:Regiao_7  rdf:type  :Regiao;
+        rdfs:label  "REPÚBLICA"@pt;
+        :temCRS     "CENTRO";
+        :temDA      "REPÚBLICA";
+        :temINC     "223.5"^^xsd:float;
+        :temNCC     "139"^^xsd:int;
+        :temUVIS    "Sé" .
+
+:Regiao_6  rdf:type  :Regiao;
+        rdfs:label  "LIBERDADE"@pt;
+        :temCRS     "CENTRO";
+        :temDA      "LIBERDADE";
+        :temINC     "262.4"^^xsd:float;
+        :temNCC     "192"^^xsd:int;
+        :temUVIS    "Sé" .
+
+:Regiao_5  rdf:type  :Regiao;
+        rdfs:label  "CAMBUCI"@pt;
+        :temCRS     "CENTRO";
+        :temDA      "CAMBUCI";
+        :temINC     "276.8"^^xsd:float;
+        :temNCC     "114"^^xsd:int;
+        :temUVIS    "Sé" .
+
+:Regiao_4  rdf:type  :Regiao;
+        rdfs:label  "BELA VISTA"@pt;
+        :temCRS     "CENTRO";
+        :temDA      "BELA VISTA";
+        :temINC     "257.1"^^xsd:float;
+        :temNCC     "189"^^xsd:int;
+        :temUVIS    "Sé" .
+
+:Regiao_3  rdf:type  :Regiao;
+        rdfs:label  "SANTA CECÍLIA"@pt;
+        :temCRS     "CENTRO";
+        :temDA      "SANTA CECÍLIA";
+        :temINC     "291.7"^^xsd:float;
+        :temNCC     "259"^^xsd:int;
+        :temUVIS    "Santa Cecília" .
+
+:Regiao_2  rdf:type  :Regiao;
+        rdfs:label  "CONSOLAÇÃO"@pt;
+        :temCRS     "CENTRO";
+        :temDA      "CONSOLAÇÃO";
+        :temINC     "268.1"^^xsd:float;
+        :temNCC     "153"^^xsd:int;
+        :temUVIS    "Santa Cecília" .
+
+:Regiao_1  rdf:type  :Regiao;
+        rdfs:label  "BOM RETIRO"@pt;
+        :temCRS     "CENTRO";
+        :temDA      "BOM RETIRO";
+        :temINC     "225.8"^^xsd:float;
+        :temNCC     "90"^^xsd:int;
+        :temUVIS    "Santa Cecília" .
+
+:testebbteste  :temPreferenciaTipo  "cartilha" , "video" .
+
+:usuariotestebbteste  rdf:type  :Usuario;
+        :temDA              "VILA GUILHERME";
+        :temDataNascimento  "2009-06-27"^^xsd:date;
+        :temEmail           "testeb@gmail.com";
+        :temNome            "testeb bteste" .
+
+:testeaateste  :temPreferenciaTipo  "video" , "infografico" .
+
+:usuariotesteaateste  rdf:type  :Usuario;
+        :temDA              "";
+        :temDataNascimento  "2010-06-27"^^xsd:date;
+        :temEmail           "testea@gmail.com";
+        :temNome            "testea ateste" .
+
+:podcast  rdf:type  owl:NamedIndividual , :RecursoEducacional;
+        :temNota    4;
+        :temTipo    "podcast";
+        :temTitulo  "Podcast sobre prevenção da dengue" .
+
+:catilha  rdf:type  owl:NamedIndividual , :RecursoEducacional;
+        :temNota  "2"^^xsd:int .
+
+:virus_zika  rdf:type    owl:NamedIndividual , :Virus;
+        rdfs:label       "Vírus Zika"@pt;
+        :causa           :zika;
+        :nomeCientifico  "ZIKV";
+        :possuiFamilia   "Flaviviridae" .
+
+:virus_febre_amarela  rdf:type  owl:NamedIndividual , :Virus;
+        rdfs:label       "Vírus da Febre Amarela"@pt;
+        :causa           :febreAmarela;
+        :nomeCientifico  "YFV";
+        :possuiFamilia   "Flaviviridae" .
+
+:virus_dengue  rdf:type  owl:NamedIndividual , :Virus;
+        rdfs:label       "Vírus da Dengue"@pt;
+        :causa           :dengue;
+        :nomeCientifico  "DENV";
+        :possuiSorotipo  "DENV-4" , "DENV-3" , "DENV-2" , "DENV-1" .
+
+:virus_chikungunya  rdf:type  owl:NamedIndividual , :Virus;
+        rdfs:label       "Vírus Chikungunya"@pt;
+        :causa           :chikungunya;
+        :nomeCientifico  "CHIKV";
+        :possuiFamilia   "Togaviridae" .
+
+:vetor_haemagogus  rdf:type  owl:NamedIndividual , :Vetor;
+        rdfs:label       "Haemagogus spp."@pt;
+        :caracteristica  "Mosquito silvestre, transmissor da febre amarela nas matas.";
+        :nomeCientifico  "Haemagogus spp.";
+        :transmite       :febreAmarela .
+
+:vetor_aedes_albopictus
+        rdf:type         owl:NamedIndividual , :Vetor;
+        rdfs:label       "Aedes albopictus"@pt;
+        :caracteristica  "Também conhecido como mosquito-tigre, vive em áreas mais sombreadas.";
+        :nomeCientifico  "Aedes albopictus";
+        :transmite       :zika , :chikungunya .
+
+:vetor_aedes_aegypti  rdf:type  owl:NamedIndividual , :Vetor;
+        rdfs:label       "Aedes aegypti"@pt;
+        :caracteristica  "Tem hábitos diurnos e se reproduz em água parada.";
+        :nomeCientifico  "Aedes aegypti";
+        :transmite       :zika , :dengue , :chikungunya .
+
+:tratamento_repouso  rdf:type  owl:NamedIndividual , :Tratamento;
+        rdfs:label  "Repouso absoluto"@pt;
+        :descricao  "Repousar ajuda o organismo a se recuperar mais rapidamente." .
+
+:tratamento_monitoramento
+        rdf:type    owl:NamedIndividual , :Tratamento;
+        rdfs:label  "Monitoramento clínico"@pt;
+        :descricao  "Acompanhamento médico regular para avaliar sinais de alarme ou agravamento." .
+
+:tratamento_hospitalar
+        rdf:type    owl:NamedIndividual , :Tratamento;
+        rdfs:label  "Internação hospitalar"@pt;
+        :descricao  "Recomendado em casos de dengue com sinais de alarme ou grave, com suporte intensivo." .
+
+:tratamento_hidratacao
+        rdf:type    owl:NamedIndividual , :Tratamento;
+        rdfs:label  "Hidratação oral ou venosa"@pt;
+        :descricao  "Ingestão de líquidos é essencial para evitar a desidratação, uma das principais causas de complicações na dengue." .
+
+:tratamento_analgesico
+        rdf:type    owl:NamedIndividual , :Tratamento;
+        rdfs:label  "Uso de analgésicos"@pt;
+        :descricao  "Utilização de paracetamol ou dipirona para controle de febre e dores. Evitar anti-inflamatórios como AAS e ibuprofeno." .
+
+:sintoma_sangramento  rdf:type  owl:NamedIndividual , :Sintoma;
+        rdfs:label  "Sangramentos leves (gengivas, nariz)"@pt .
+
+:sintoma_nausea  rdf:type  owl:NamedIndividual , :Sintoma;
+        rdfs:label  "Náusea ou vômito"@pt .
+
+:sintoma_manchas  rdf:type  owl:NamedIndividual , :Sintoma;
+        rdfs:label  "Manchas vermelhas na pele"@pt .
+
+:sintoma_febre  rdf:type  owl:NamedIndividual , :Sintoma;
+        rdfs:label  "Febre alta"@pt .
+
+:sintoma_fadiga  rdf:type  owl:NamedIndividual , :Sintoma;
+        rdfs:label  "Cansaço ou fadiga"@pt .
+
+:sintoma_dor_olhos  rdf:type  owl:NamedIndividual , :Sintoma;
+        rdfs:label  "Dor atrás dos olhos"@pt .
+
+:sintoma_dor_muscular
+        rdf:type    owl:NamedIndividual , :Sintoma;
+        rdfs:label  "Dor muscular"@pt .
+
+:sintoma_dor_cabeca  rdf:type  owl:NamedIndividual , :Sintoma;
+        rdfs:label  "Dor de cabeça"@pt .
+
+:sintoma_dor_articular
+        rdf:type    owl:NamedIndividual , :Sintoma;
+        rdfs:label  "Dor nas articulações"@pt .
+
+:renato  rdf:type            owl:NamedIndividual , :Usuario;
+        :temDataNascimento   "1981-09-05"^^xsd:date;
+        :temEmail            "renatobdo@gmail.com";
+        :temNome             "Renato";
+        :temPreferenciaTipo  "podcast" , "video" .
+
+:regiao_vilamariana  rdf:type  owl:NamedIndividual , :Regiao;
+        :temBairro     "Vila Mariana";
+        :temCidade     "São Paulo";
+        :temLatitude   -23.5896;
+        :temLongitude  -46.6325 .
+
+:regiao_santana  rdf:type  owl:NamedIndividual , :Regiao;
+        :temBairro     "Santana";
+        :temCidade     "São Paulo";
+        :temLatitude   -23.5;
+        :temLongitude  -46.6242 .
+
+:regiao_pinheiros  rdf:type  owl:NamedIndividual , :Regiao;
+        :temBairro     "Pinheiros";
+        :temCidade     "São Paulo";
+        :temLatitude   -23.5614;
+        :temLongitude  -46.679 .
+
+:regiao_mooca  rdf:type  owl:NamedIndividual , :Regiao;
+        :temBairro     "Mooca";
+        :temCidade     "São Paulo";
+        :temLatitude   -23.5548;
+        :temLongitude  -46.5911 .
+
+:regiao_ipiranga  rdf:type  owl:NamedIndividual , :Regiao;
+        :temBairro     "Ipiranga";
+        :temCidade     "São Paulo";
+        :temLatitude   -23.5854;
+        :temLongitude  -46.6109 .
+
+:juliana  rdf:type           owl:NamedIndividual , :Usuario;
+        :temDataNascimento   "1997-03-28"^^xsd:date;
+        :temEmail            "juliana@example.com";
+        :temNome             "Juliana";
+        :temPreferenciaTipo  "cartilha" , "infografico" .
+
+:igor   rdf:type             owl:NamedIndividual , :Usuario;
+        :temDataNascimento   "2013-05-01"^^xsd:date;
+        :temEmail            "igor@example.com";
+        :temNome             "Igor";
+        :temPreferenciaTipo  "video" , "jogo" .
+
+:helena  rdf:type            owl:NamedIndividual , :Usuario;
+        :temDataNascimento   "2020-09-26"^^xsd:date;
+        :temEmail            "helena@example.com";
+        :temNome             "Helena";
+        :temPreferenciaTipo  "video" , "jogo" .
+
+:gabriel  rdf:type           owl:NamedIndividual , :Usuario;
+        :temDataNascimento   "1991-06-23"^^xsd:date;
+        :temEmail            "gabriel@example.com";
+        :temNome             "Gabriel";
+        :temPreferenciaTipo  "quiz" , "infografico" .
+
+:felipe  rdf:type            owl:NamedIndividual , :Usuario;
+        :temDataNascimento   "1987-04-15"^^xsd:date;
+        :temEmail            "felipe@example.com";
+        :temNome             "Felipe";
+        :temPreferenciaTipo  "caça-palavras" , "video" .
+
+:eduarda  rdf:type           owl:NamedIndividual , :Usuario;
+        :temDataNascimento   "2000-01-25"^^xsd:date;
+        :temEmail            "eduarda@example.com";
+        :temNome             "Eduarda";
+        :temPreferenciaTipo  "jogo" .
+
+:daniel  rdf:type            owl:NamedIndividual , :Usuario;
+        :temDataNascimento   "1985-05-02"^^xsd:date;
+        :temEmail            "daniel@example.com";
+        :temNome             "Daniel";
+        :temPreferenciaTipo  "cartilha" , "infografico" .
+
+:clara  rdf:type             owl:NamedIndividual , :Usuario;
+        :temDataNascimento   "2003-01-22"^^xsd:date;
+        :temEmail            "clara@example.com";
+        :temNome             "Clara";
+        :temPreferenciaTipo  "podcast" , "video" .
+
+:bruno  rdf:type             owl:NamedIndividual , :Usuario;
+        :temDataNascimento   "1995-01-30"^^xsd:date;
+        :temEmail            "bruno@example.com";
+        :temNome             "Bruno";
+        :temPreferenciaTipo  "quiz" , "jogo" .
+
+:ana    rdf:type             owl:NamedIndividual , :Usuario;
+        :temDataNascimento   "1997-02-27"^^xsd:date;
+        :temEmail            "ana@example.com";
+        :temNome             "Ana";
+        :temPreferenciaTipo  "video" , "infografico" .
+
+:VideoVacina  rdf:type  owl:NamedIndividual , :RecursoEducacional;
+        :temNota  4;
+        :temTipo  "video" .
+
+:VideoCombate  rdf:type  owl:NamedIndividual , :RecursoEducacional;
+        :temNota  5;
+        :temTipo  "video" .
+
+:VacinarContraFebreAmarela
+        rdf:type        owl:NamedIndividual , :Prevencao;
+        rdfs:label      "Vacinar contra febre amarela";
+        :descricao      "A vacina é a forma mais eficaz de prevenção contra a febre amarela.";
+        :previneContra  :FebreAmarela .
+
+:UsarRepelente  rdf:type  owl:NamedIndividual , :Prevencao;
+        rdfs:label      "Usar repelente";
+        :descricao      "Aplicar repelente nas áreas expostas do corpo para evitar picadas.";
+        :previneContra  :Zika , :Dengue , :Chikungunya .
+
+:TamparCaixasDAgua  rdf:type  owl:NamedIndividual , :Prevencao;
+        rdfs:label      "Tampar caixas d'água";
+        :descricao      "Mantenha as caixas d'água sempre fechadas com tampa adequada.";
+        :previneContra  :Zika , :Dengue , :Chikungunya .
+
+:JogoEducativo  rdf:type  owl:NamedIndividual , :RecursoEducacional;
+        :temNota  4;
+        :temTipo  "jogo" .
+
+:InfograficoVacina  rdf:type  owl:NamedIndividual , :RecursoEducacional;
+        :temNota  3;
+        :temTipo  "infografico" .
+
+:IndEpi_2025_W53  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :weekEnd     "2026-01-03"^^xsd:date;
+        :weekNumber  53;
+        :weekStart   "2025-12-28"^^xsd:date .
+
+:IndEpi_2025_W26  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :weekEnd     "2025-06-28"^^xsd:date;
+        :weekNumber  26;
+        :weekStart   "2025-06-22"^^xsd:date .
+
+:IndEpi_2025_W25  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :weekEnd     "2025-06-21"^^xsd:date;
+        :weekNumber  25;
+        :weekStart   "2025-06-15"^^xsd:date .
+
+:IndEpi_2025_W24  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        436;
+        :casesDengueAlarm   10;
+        :casesDengueSevere  1;
+        :weekEnd            "2025-06-14"^^xsd:date;
+        :weekNumber         24;
+        :weekStart          "2025-06-08"^^xsd:date .
+
+:IndEpi_2025_W23  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        1014;
+        :casesDengueAlarm   18;
+        :casesDengueSevere  0;
+        :weekEnd            "2025-06-07"^^xsd:date;
+        :weekNumber         23;
+        :weekStart          "2025-06-01"^^xsd:date .
+
+:IndEpi_2025_W22  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        1329;
+        :casesDengueAlarm   17;
+        :casesDengueSevere  2;
+        :weekEnd            "2025-05-31"^^xsd:date;
+        :weekNumber         22;
+        :weekStart          "2025-05-25"^^xsd:date .
+
+:IndEpi_2025_W21  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        1643;
+        :casesDengueAlarm   26;
+        :casesDengueSevere  2;
+        :weekEnd            "2025-05-24"^^xsd:date;
+        :weekNumber         21;
+        :weekStart          "2025-05-18"^^xsd:date .
+
+:IndEpi_2025_W20  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        2087;
+        :casesDengueAlarm   37;
+        :casesDengueSevere  3;
+        :weekEnd            "2025-05-17"^^xsd:date;
+        :weekNumber         20;
+        :weekStart          "2025-05-11"^^xsd:date .
+
+:IndEpi_2025_W19  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        2774;
+        :casesDengueAlarm   41;
+        :casesDengueSevere  2;
+        :weekEnd            "2025-05-10"^^xsd:date;
+        :weekNumber         19;
+        :weekStart          "2025-05-04"^^xsd:date .
+
+:IndEpi_2025_W18  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        2758;
+        :casesDengueAlarm   62;
+        :casesDengueSevere  0;
+        :weekEnd            "2025-05-03"^^xsd:date;
+        :weekNumber         18;
+        :weekStart          "2025-04-27"^^xsd:date .
+
+:IndEpi_2025_W17  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        3270;
+        :casesDengueAlarm   51;
+        :casesDengueSevere  4;
+        :weekEnd            "2025-04-26"^^xsd:date;
+        :weekNumber         17;
+        :weekStart          "2025-04-20"^^xsd:date .
+
+:IndEpi_2025_W16  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        3096;
+        :casesDengueAlarm   37;
+        :casesDengueSevere  3;
+        :weekEnd            "2025-04-19"^^xsd:date;
+        :weekNumber         16;
+        :weekStart          "2025-04-13"^^xsd:date .
+
+:IndEpi_2025_W15  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        3506;
+        :casesDengueAlarm   48;
+        :casesDengueSevere  2;
+        :weekEnd            "2025-04-12"^^xsd:date;
+        :weekNumber         15;
+        :weekStart          "2025-04-06"^^xsd:date .
+
+:IndEpi_2025_W14  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        3775;
+        :casesDengueAlarm   69;
+        :casesDengueSevere  3;
+        :weekEnd            "2025-04-05"^^xsd:date;
+        :weekNumber         14;
+        :weekStart          "2025-03-30"^^xsd:date .
+
+:IndEpi_2025_W13  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        3554;
+        :casesDengueAlarm   77;
+        :casesDengueSevere  4;
+        :weekEnd            "2025-03-29"^^xsd:date;
+        :weekNumber         13;
+        :weekStart          "2025-03-23"^^xsd:date .
+
+:IndEpi_2025_W12  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        3230;
+        :casesDengueAlarm   61;
+        :casesDengueSevere  3;
+        :weekEnd            "2025-03-22"^^xsd:date;
+        :weekNumber         12;
+        :weekStart          "2025-03-16"^^xsd:date .
+
+:IndEpi_2025_W11  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        2667;
+        :casesDengueAlarm   44;
+        :casesDengueSevere  3;
+        :weekEnd            "2025-03-15"^^xsd:date;
+        :weekNumber         11;
+        :weekStart          "2025-03-09"^^xsd:date .
+
+:IndEpi_2025_W10  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        1901;
+        :casesDengueAlarm   20;
+        :casesDengueSevere  1;
+        :weekEnd            "2025-03-08"^^xsd:date;
+        :weekNumber         10;
+        :weekStart          "2025-03-02"^^xsd:date .
+
+:IndEpi_2025_W09  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        1568;
+        :casesDengueAlarm   21;
+        :casesDengueSevere  1;
+        :weekEnd            "2025-03-01"^^xsd:date;
+        :weekNumber         9;
+        :weekStart          "2025-02-23"^^xsd:date .
+
+:IndEpi_2025_W08  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        1262;
+        :casesDengueAlarm   13;
+        :casesDengueSevere  1;
+        :weekEnd            "2025-02-22"^^xsd:date;
+        :weekNumber         8;
+        :weekStart          "2025-02-16"^^xsd:date .
+
+:IndEpi_2025_W07  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        1074;
+        :casesDengueAlarm   9;
+        :casesDengueSevere  2;
+        :weekEnd            "2025-02-15"^^xsd:date;
+        :weekNumber         7;
+        :weekStart          "2025-02-09"^^xsd:date .
+
+:IndEpi_2025_W06  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        834;
+        :casesDengueAlarm   7;
+        :casesDengueSevere  2;
+        :weekEnd            "2025-02-08"^^xsd:date;
+        :weekNumber         6;
+        :weekStart          "2025-02-02"^^xsd:date .
+
+:IndEpi_2025_W05  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        742;
+        :casesDengueAlarm   7;
+        :casesDengueSevere  0;
+        :weekEnd            "2025-02-01"^^xsd:date;
+        :weekNumber         5;
+        :weekStart          "2025-01-26"^^xsd:date .
+
+:IndEpi_2025_W04  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        550;
+        :casesDengueAlarm   7;
+        :casesDengueSevere  1;
+        :weekEnd            "2025-01-25"^^xsd:date;
+        :weekNumber         4;
+        :weekStart          "2025-01-19"^^xsd:date .
+
+:IndEpi_2025_W03  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        507;
+        :casesDengueAlarm   9;
+        :casesDengueSevere  0;
+        :weekEnd            "2025-01-18"^^xsd:date;
+        :weekNumber         3;
+        :weekStart          "2025-01-12"^^xsd:date .
+
+:IndEpi_2025_W02  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        461;
+        :casesDengueAlarm   8;
+        :casesDengueSevere  0;
+        :weekEnd            "2025-01-11"^^xsd:date;
+        :weekNumber         2;
+        :weekStart          "2025-01-05"^^xsd:date .
+
+:IndEpi_2025_W01  rdf:type  owl:NamedIndividual , :IndicadorEpidemiologico;
+        :casesDengue        164;
+        :casesDengueAlarm   0;
+        :casesDengueSevere  0;
+        :weekEnd            "2025-01-04"^^xsd:date;
+        :weekNumber         1;
+        :weekStart          "2024-12-29"^^xsd:date .
+
+:FebreAmarela  rdf:type       owl:NamedIndividual , :Arbovirose;
+        rdfs:label            "Febre Amarela";
+        :temAgenteEtiologico  "Flavivírus (vírus da febre amarela)";
+        :temSintoma           "Icterícia, febre, dores musculares, vômitos";
+        :transmitidaPor       "Haemagogus, Sabethes e Aedes aegypti (em área urbana)" .
+
+:EvitarAcumuloLixo  rdf:type  owl:NamedIndividual , :Prevencao;
+        rdfs:label      "Evitar acúmulo de lixo";
+        :descricao      "Mantenha lixeiras tampadas e sem água parada.";
+        :previneContra  :FebreAmarela , :Zika , :Dengue , :Chikungunya .
+
+:Zika   rdf:type              owl:NamedIndividual , :Arbovirose;
+        rdfs:label            "Zika";
+        :temAgenteEtiologico  "ZIKV (vírus Zika)";
+        :temSintoma           "Coceira, manchas vermelhas, febre baixa, conjuntivite";
+        :transmitidaPor       "Aedes aegypti" .
+
+:EliminarPratosVasos  rdf:type  owl:NamedIndividual , :Prevencao;
+        rdfs:label      "Eliminar pratos de vasos de planta";
+        :descricao      "Evite acumular água em pratinhos de vasos, substitua por areia até a borda.";
+        :previneContra  :Zika , :Dengue .
+
+:Dengue  rdf:type             owl:NamedIndividual , :Arbovirose;
+        rdfs:label            "Dengue";
+        :temAgenteEtiologico  "DENV (vírus da dengue)";
+        :temSintoma           "Febre alta, dor muscular, dor atrás dos olhos, manchas na pele";
+        :transmitidaPor       "Aedes aegypti" .
+
+:Chikungunya  rdf:type        owl:NamedIndividual , :Arbovirose;
+        rdfs:label            "Chikungunya";
+        :temAgenteEtiologico  "CHIKV (vírus Chikungunya)";
+        :temSintoma           "Dor articular intensa, febre, fadiga, náusea";
+        :transmitidaPor       "Aedes aegypti e Aedes albopictus" .
+
+:Virus  rdf:type  owl:Class .
+
+:Vetor  rdf:type  owl:Class .
+
+:Usuario  rdf:type  owl:Class .
+
+:Tratamento  rdf:type  owl:Class .
+
+:Sintoma  rdf:type  owl:Class .
+
+:Regiao  rdf:type  owl:Class .
+
+:RecursoEducacional  rdf:type  owl:Class .
+
+:Prevencao  rdf:type  owl:Class .
+
+:Arbovirose  rdf:type  owl:Class .
+
+:weekStart  rdf:type  owl:DatatypeProperty;
+        rdfs:domain  :IndicadorEpidemiologico;
+        rdfs:range   xsd:date .
+
+:weekNumber  rdf:type  owl:DatatypeProperty;
+        rdfs:domain  :IndicadorEpidemiologico;
+        rdfs:range   xsd:int .
+
+:weekEnd  rdf:type   owl:DatatypeProperty;
+        rdfs:domain  :IndicadorEpidemiologico;
+        rdfs:range   xsd:date .
+
+:casesDengueSevere  rdf:type  owl:DatatypeProperty;
+        rdfs:domain  :IndicadorEpidemiologico;
+        rdfs:range   xsd:int .
+
+:casesDengueAlarm  rdf:type  owl:DatatypeProperty;
+        rdfs:domain  :IndicadorEpidemiologico;
+        rdfs:range   xsd:int .
+
+:IndicadorEpidemiologico
+        rdf:type  owl:Class .
+
+:casesDengue  rdf:type  owl:DatatypeProperty;
+        rdfs:domain  :IndicadorEpidemiologico;
+        rdfs:range   xsd:int .
+
+xsd:date  rdf:type  rdfs:Datatype .
+
+:temTitulo  rdf:type  owl:AnnotationProperty .
+
+:transmitidaPor  rdf:type  owl:AnnotationProperty .
+
+:transmite  rdf:type  owl:AnnotationProperty .
+
+:temdatanascimento  rdf:type  owl:AnnotationProperty .
+
+:temTipo  rdf:type  owl:AnnotationProperty .
+
+:temSintoma  rdf:type  owl:AnnotationProperty .
+
+:temPreferenciaTipo  rdf:type  owl:AnnotationProperty .
+
+:temNota  rdf:type  owl:AnnotationProperty .
+
+:temNome  rdf:type  owl:AnnotationProperty .
+
+:temLongitude  rdf:type  owl:AnnotationProperty .
+
+:temLatitude  rdf:type  owl:AnnotationProperty .
+
+:temEmail  rdf:type  owl:AnnotationProperty .
+
+:temDataNascimento  rdf:type  owl:AnnotationProperty .
+
+:temCidade  rdf:type  owl:AnnotationProperty .
+
+:temBairro  rdf:type  owl:AnnotationProperty .
+
+:temAgenteEtiologico  rdf:type  owl:AnnotationProperty .
+
+:previneContra  rdf:type  owl:AnnotationProperty .
+
+:possuiSorotipo  rdf:type  owl:AnnotationProperty .
+
+:possuiFamilia  rdf:type  owl:AnnotationProperty .
+
+:nomeCientifico  rdf:type  owl:AnnotationProperty .
+
+:descricao  rdf:type  owl:AnnotationProperty .
+
+:causa  rdf:type  owl:AnnotationProperty .
+
+:caracteristica  rdf:type  owl:AnnotationProperty .
+
+<urn:absolute:arbo>  rdf:type  owl:Ontology .
