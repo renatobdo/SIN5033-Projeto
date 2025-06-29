@@ -282,6 +282,15 @@ SELECT ?tipo ?tema ?titulo ?media WHERE {
 }
 ORDER BY DESC(?media)
 ```
+## Conultar todos os acessos a determinado recurso
+```
+PREFIX : <http://www.exemplo.org/arboviroses#>
+
+SELECT ?usuario ?recurso WHERE {
+  ?usuario :acessouRecurso ?recurso .
+}
+```
+
 ## Comandos para exportar os dados (cmd do windows) do apache jena fuseki para arquivo dados.ttl
 
 curl -H "Accept: text/turtle" --data-urlencode "query=CONSTRUCT { ?s ?p ?o } WHERE { ?s ?p ?o }" http://localhost:3030/arboviroses/query -o dados.ttl
