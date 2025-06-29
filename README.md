@@ -259,6 +259,16 @@ SELECT ?semana ?casos ?sinaisAlarme ?casosGraves ?inicio ?fim WHERE {
 }
 ORDER BY DESC(?fim)
 ```
+## Consulta média de notas
+```
+PREFIX : <http://www.exemplo.org/arboviroses#>
+
+SELECT ?recurso ?media WHERE {
+  ?recurso :temMediaNota ?media .
+}
+ORDER BY DESC(?media)
+```
+
 
 ## Comandos para exportar os dados (cmd do windows) do apache jena fuseki para arquivo dados.ttl
 
