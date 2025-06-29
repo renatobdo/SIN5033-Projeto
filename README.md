@@ -269,7 +269,19 @@ SELECT ?recurso ?media WHERE {
 ORDER BY DESC(?media)
 ```
 
+## Consulta média de notas por tipo, tema, título.
+```
+PREFIX : <http://www.exemplo.org/arboviroses#>
 
+SELECT ?tipo ?tema ?titulo ?media WHERE {
+  ?recurso a :RecursoEducacional ;
+           :temTipo ?tipo ;
+           :temTema ?tema ;
+           :temTitulo ?titulo ;
+           :temMediaNota ?media .
+}
+ORDER BY DESC(?media)
+```
 ## Comandos para exportar os dados (cmd do windows) do apache jena fuseki para arquivo dados.ttl
 
 curl -H "Accept: text/turtle" --data-urlencode "query=CONSTRUCT { ?s ?p ?o } WHERE { ?s ?p ?o }" http://localhost:3030/arboviroses/query -o dados.ttl
