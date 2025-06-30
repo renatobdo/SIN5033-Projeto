@@ -85,14 +85,14 @@ No código da API FastAPI, a recomendação foi implementada em duas estratégia
 Objetivo: recomendar recursos educacionais que estejam alinhados com o tipo de recurso que o próprio usuário informou como preferência (ex: vídeo, cartilha, jogo).
 SPARQL usado:
 ```
-SELECT ?recurso ?tipo ?nota WHERE {
-  {user_uri} :temPreferenciaTipo ?tipo .
-  ?recurso a :RecursoEducacional ;
-           :temTipo ?tipo ;
-           :temNota ?nota .
-}
-ORDER BY DESC(?nota)
-LIMIT 5
+q_conteudo = f"""
+    SELECT ?recurso ?tipo ?mediaNota WHERE {{
+        {user_uri} :temPreferenciaTipo ?tipo .
+        ?recurso a :RecursoEducacional ;
+                 :temTipo ?tipo ;
+                 :temMediaNota ?mediaNota .
+    }} ORDER BY DESC(?mediaNota) LIMIT 5
+    """
 ```
 O que faz:
 
@@ -108,80 +108,39 @@ O que faz:
 
 ✅ 2. Recomendação por Colaboração
 
-A consulta por recomendação colaborativa semântica tem como objetivo sugerir recursos educacionais a um usuário com base em preferências compartilhadas com outros usuários, priorizando tipos de conteúdo ainda não acessados por ele.
-Para priorizar recursos de tipos que o usuário ainda não conhece, mas sem excluir os que ele já prefere, podemos usar uma subconsulta com um indicador binário (por exemplo, ?tipoNovo), atribuindo:
-
-    1 para tipos novos (que o usuário ainda não tem preferência),
-
-    0 para tipos já preferidos.
-
-Assim, podemos ordenar primeiro pelos tipos novos (?tipoNovo DESC), depois pela nota (?nota DESC).
-
-✅ Consulta com priorização de tipos novos:
-
+A consulta por recomendação colaborativa semântica tem como objetivo sugerir recursos educacionais a um usuário com base em preferências compartilhadas com outros usuários. A recomendação é realizada também pela quantidade de acessos a determinado recurso e pela maior nota média atribuída ao recurso
 ```
 q_colab = f"""
 PREFIX : <http://www.exemplo.org/arboviroses#>
 
-SELECT DISTINCT ?recurso ?tipo ?nota ?nome ?email ?idade ?tipoNovo WHERE {{
+SELECT ?recurso ?tipo ?mediaNota (COUNT(DISTINCT ?outro) AS ?qtdAcessos) WHERE {{
   {user_uri} :temPreferenciaTipo ?tipo_comum .
-  ?outro :temPreferenciaTipo ?tipo_comum .
-  FILTER (?outro != {user_uri})
 
-  ?outro :temPreferenciaTipo ?tipo .
+  ?outro a :Usuario ;
+          :temPreferenciaTipo ?tipo_comum ;
+          :acessouRecurso ?recurso .
+
+  FILTER (?outro != {user_uri})
 
   ?recurso a :RecursoEducacional ;
            :temTipo ?tipo ;
-           :temNota ?nota .
-
-  OPTIONAL {{ ?outro :temNome ?nome }}
-  OPTIONAL {{ ?outro :temEmail ?email }}
-  OPTIONAL {{ ?outro :temIdade ?idade }}
-
-  BIND(IF(EXISTS {{ {user_uri} :temPreferenciaTipo ?tipo }}, 0, 1) AS ?tipoNovo)
+           :temMediaNota ?mediaNota .
 }}
-ORDER BY DESC(?tipoNovo) DESC(?nota)
+GROUP BY ?recurso ?tipo ?mediaNota
+ORDER BY DESC(?mediaNota) DESC(?qtdAcessos)
 LIMIT 5
 """
 ```
 
-🔍 Explicação:
+Por exemplo, o usuário Renato tem preferência por vídeo e podcast. Caso outros
+usuários tenham pelo menos uma preferência em comum, o sistema de recomendação
+retorna Recursos educacionais acessados pelos outros usuários ordenados pela média
+de notas e quantidade de acessos.
 
-    ?tipoNovo = 1 → tipo que o usuário ainda não tem.
+![sistema_recomendacoes_dengue](https://github.com/user-attachments/assets/9776055b-72ec-4620-a7c2-2218ea67ae9f)
 
-    ?tipoNovo = 0 → tipo já conhecido do usuário.
+![sistema_recomendacoes_dengue2](https://github.com/user-attachments/assets/956effb3-17bb-49ec-b71a-6cec32486b2a)
 
-    O ORDER BY prioriza tipos novos e, entre eles, os com maior nota.
-
-Exemplo prático
-
-Imagine os seguintes usuários e preferências:
-
-    :helena prefere jogo, video
-
-    :igor prefere jogo, infografico
-
-    :ana prefere video, texto
-
-    :recurso1 é um jogo com nota 4
-
-    :recurso2 é um infografico com nota 5
-
-    :recurso3 é um texto com nota 3
-
-Resultado da consulta para :helena:
-
-    igor é semelhante a helena pois ambos gostam de jogo.
-
-    igor também gosta de infografico, que helena ainda não conhece → ?tipoNovo = 1
-
-    recurso2 (infográfico) será recomendado com prioridade, pois é novo.
-
-    recurso1 (jogo) também pode aparecer, mas com menor prioridade → ?tipoNovo = 0
-
-    ana é semelhante por video, mas texto já foi acessado por helena? Se não, entra como ?tipoNovo = 1.
-
-    
 ## Consulta classes existentes
 
 ```sparql
