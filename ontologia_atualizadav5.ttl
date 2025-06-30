@@ -1,0 +1,1760 @@
+@prefix : <http://www.exemplo.org/arboviroses#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.exemplo.org/arboviroses#> .
+
+<urn:absolute:arbo> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.exemplo.org/arboviroses#caracteristica
+:caracteristica rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#causa
+:causa rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#descricao
+:descricao rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#nomeCientifico
+:nomeCientifico rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#possuiFamilia
+:possuiFamilia rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#possuiSorotipo
+:possuiSorotipo rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#previneContra
+:previneContra rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temAgenteEtiologico
+:temAgenteEtiologico rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temBairro
+:temBairro rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temCRS
+:temCRS rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temCidade
+:temCidade rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temDA
+:temDA rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temDataNascimento
+:temDataNascimento rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temEmail
+:temEmail rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temINC
+:temINC rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temLatitude
+:temLatitude rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temLongitude
+:temLongitude rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temNCC
+:temNCC rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temNome
+:temNome rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temNota
+:temNota rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temPreferenciaTipo
+:temPreferenciaTipo rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temSintoma
+:temSintoma rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temTema
+:temTema rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temTipo
+:temTipo rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temTitulo
+:temTitulo rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temUVIS
+:temUVIS rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#temdatanascimento
+:temdatanascimento rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#transmite
+:transmite rdf:type owl:AnnotationProperty .
+
+
+###  http://www.exemplo.org/arboviroses#transmitidaPor
+:transmitidaPor rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.exemplo.org/arboviroses#casesDengue
+:casesDengue rdf:type owl:DatatypeProperty ;
+             rdfs:domain :IndicadorEpidemiologico ;
+             rdfs:range xsd:int .
+
+
+###  http://www.exemplo.org/arboviroses#casesDengueAlarm
+:casesDengueAlarm rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :IndicadorEpidemiologico ;
+                  rdfs:range xsd:int .
+
+
+###  http://www.exemplo.org/arboviroses#casesDengueSevere
+:casesDengueSevere rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :IndicadorEpidemiologico ;
+                   rdfs:range xsd:int .
+
+
+###  http://www.exemplo.org/arboviroses#weekEnd
+:weekEnd rdf:type owl:DatatypeProperty ;
+         rdfs:domain :IndicadorEpidemiologico ;
+         rdfs:range xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#weekNumber
+:weekNumber rdf:type owl:DatatypeProperty ;
+            rdfs:domain :IndicadorEpidemiologico ;
+            rdfs:range xsd:int .
+
+
+###  http://www.exemplo.org/arboviroses#weekStart
+:weekStart rdf:type owl:DatatypeProperty ;
+           rdfs:domain :IndicadorEpidemiologico ;
+           rdfs:range xsd:date .
+
+
+###  urn:absolute:arbo#caracteristica
+:caracteristica rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Vetor .
+
+
+###  urn:absolute:arbo#causa
+:causa rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Virus ;
+       rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#descricao
+:descricao rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Sintoma ,
+                       :Tratamento ;
+           rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#nomeCientifico
+:nomeCientifico rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Vetor ,
+                            :Virus ;
+                rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#possuiFamilia
+:possuiFamilia rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Virus ;
+               rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#possuiSorotipo
+:possuiSorotipo rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Virus ;
+                rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#previneContra
+:previneContra rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Prevencao ;
+               rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#temAgenteEtiologico
+:temAgenteEtiologico rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Arbovirose ;
+                     rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#temCRS
+:temCRS rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Regiao ;
+        rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#temDA
+:temDA rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Regiao ;
+       rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#temDataNascimento
+:temDataNascimento rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Usuario ;
+                   rdfs:range xsd:date .
+
+
+###  urn:absolute:arbo#temEmail
+:temEmail rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Usuario ;
+          rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#temINC
+:temINC rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Regiao ;
+        rdfs:range xsd:float .
+
+
+###  urn:absolute:arbo#temMediaNota
+:temMediaNota rdf:type owl:DatatypeProperty ;
+              rdfs:domain :RecursoEducacional ;
+              rdfs:range xsd:float ;
+              rdfs:comment "Média de notas do recurso educacional atribuído pelos usuários" .
+
+
+###  urn:absolute:arbo#temNCC
+:temNCC rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Regiao ;
+        rdfs:range xsd:float .
+
+
+###  urn:absolute:arbo#temNome
+:temNome rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Usuario ;
+         rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#temPreferenciaTipo
+:temPreferenciaTipo rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Usuario ;
+                    rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#temSintoma
+:temSintoma rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Arbovirose ;
+            rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#temTema
+:temTema rdf:type owl:DatatypeProperty ;
+         rdfs:domain :RecursoEducacional ;
+         rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#temTipo
+:temTipo rdf:type owl:DatatypeProperty ;
+         rdfs:domain :RecursoEducacional ;
+         rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#temTitulo
+:temTitulo rdf:type owl:DatatypeProperty ;
+           rdfs:domain :RecursoEducacional ;
+           rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#temURL
+:temURL rdf:type owl:DatatypeProperty ;
+        rdfs:domain :RecursoEducacional ;
+        rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#temUVIS
+:temUVIS rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Regiao ;
+         rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#transmite
+:transmite rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Vetor ;
+           rdfs:range xsd:string .
+
+
+###  urn:absolute:arbo#transmitidoPor
+:transmitidoPor rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Arbovirose ;
+                rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.exemplo.org/arboviroses#Arbovirose
+:Arbovirose rdf:type owl:Class .
+
+
+###  http://www.exemplo.org/arboviroses#IndicadorEpidemiologico
+:IndicadorEpidemiologico rdf:type owl:Class .
+
+
+###  http://www.exemplo.org/arboviroses#Prevencao
+:Prevencao rdf:type owl:Class .
+
+
+###  http://www.exemplo.org/arboviroses#RecursoEducacional
+:RecursoEducacional rdf:type owl:Class .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao
+:Regiao rdf:type owl:Class .
+
+
+###  http://www.exemplo.org/arboviroses#Sintoma
+:Sintoma rdf:type owl:Class .
+
+
+###  http://www.exemplo.org/arboviroses#Tratamento
+:Tratamento rdf:type owl:Class .
+
+
+###  http://www.exemplo.org/arboviroses#Usuario
+:Usuario rdf:type owl:Class .
+
+
+###  http://www.exemplo.org/arboviroses#Vetor
+:Vetor rdf:type owl:Class .
+
+
+###  http://www.exemplo.org/arboviroses#Virus
+:Virus rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.exemplo.org/arboviroses#Chikungunya
+:Chikungunya rdf:type owl:NamedIndividual ,
+                      :Arbovirose ;
+             :temAgenteEtiologico "CHIKV (vírus Chikungunya)" ;
+             :temSintoma "Dor articular intensa, febre, fadiga, náusea" ;
+             :transmitidoPor "Aedes aegypti e Aedes albopictus" ;
+             :temAgenteEtiologico "CHIKV (vírus Chikungunya)" ;
+             :temSintoma "Dor articular intensa, febre, fadiga, náusea" ;
+             :transmitidaPor "Aedes aegypti e Aedes albopictus" ;
+             rdfs:label "Chikungunya" .
+
+
+###  http://www.exemplo.org/arboviroses#Dengue
+:Dengue rdf:type owl:NamedIndividual ,
+                 :Arbovirose ;
+        :temAgenteEtiologico "DENV (vírus da dengue)" ;
+        :temSintoma "Febre alta, dor muscular, dor atrás dos olhos, manchas na pele" ;
+        :transmitidoPor "Aedes aegypti" ;
+        :temAgenteEtiologico "DENV (vírus da dengue)" ;
+        :temSintoma "Febre alta, dor muscular, dor atrás dos olhos, manchas na pele" ;
+        :transmitidaPor "Aedes aegypti" ;
+        rdfs:label "Dengue" .
+
+
+###  http://www.exemplo.org/arboviroses#EliminarPratosVasos
+:EliminarPratosVasos rdf:type owl:NamedIndividual ,
+                              :Prevencao ;
+                     :descricao "Evite acumular água em pratinhos de vasos, substitua por areia até a borda." ;
+                     :previneContra "Dengue" ,
+                                    "Zika" ;
+                     :descricao "Evite acumular água em pratinhos de vasos, substitua por areia até a borda." ;
+                     :previneContra :Dengue ,
+                                    :Zika ;
+                     rdfs:label "Eliminar pratos de vasos de planta" .
+
+
+###  http://www.exemplo.org/arboviroses#EvitarAcumuloLixo
+:EvitarAcumuloLixo rdf:type owl:NamedIndividual ,
+                            :Prevencao ;
+                   :descricao "Mantenha lixeiras tampadas e sem água parada." ;
+                   :previneContra "Chikungunya" ,
+                                  "Dengue" ,
+                                  "Febre Amarela" ,
+                                  "Zika" ;
+                   :descricao "Mantenha lixeiras tampadas e sem água parada." ;
+                   :previneContra :Chikungunya ,
+                                  :Dengue ,
+                                  :FebreAmarela ,
+                                  :Zika ;
+                   rdfs:label "Evitar acúmulo de lixo" .
+
+
+###  http://www.exemplo.org/arboviroses#FebreAmarela
+:FebreAmarela rdf:type owl:NamedIndividual ,
+                       :Arbovirose ;
+              :temAgenteEtiologico "Flavivírus (vírus da febre amarela)" ;
+              :temSintoma "Icterícia, febre, dores musculares, vômitos" ;
+              :transmitidoPor "Haemagogus, Sabethes e Aedes aegypti (em área urbana)" ;
+              :temAgenteEtiologico "Flavivírus (vírus da febre amarela)" ;
+              :temSintoma "Icterícia, febre, dores musculares, vômitos" ;
+              :transmitidaPor "Haemagogus, Sabethes e Aedes aegypti (em área urbana)" ;
+              rdfs:label "Febre Amarela" .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W01
+:IndEpi_2025_W01 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 164 ;
+                 :casesDengueAlarm 0 ;
+                 :casesDengueSevere 0 ;
+                 :weekEnd "2025-01-04"^^xsd:date ;
+                 :weekNumber 1 ;
+                 :weekStart "2024-12-29"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W02
+:IndEpi_2025_W02 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 461 ;
+                 :casesDengueAlarm 8 ;
+                 :casesDengueSevere 0 ;
+                 :weekEnd "2025-01-11"^^xsd:date ;
+                 :weekNumber 2 ;
+                 :weekStart "2025-01-05"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W03
+:IndEpi_2025_W03 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 507 ;
+                 :casesDengueAlarm 9 ;
+                 :casesDengueSevere 0 ;
+                 :weekEnd "2025-01-18"^^xsd:date ;
+                 :weekNumber 3 ;
+                 :weekStart "2025-01-12"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W04
+:IndEpi_2025_W04 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 550 ;
+                 :casesDengueAlarm 7 ;
+                 :casesDengueSevere 1 ;
+                 :weekEnd "2025-01-25"^^xsd:date ;
+                 :weekNumber 4 ;
+                 :weekStart "2025-01-19"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W05
+:IndEpi_2025_W05 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 742 ;
+                 :casesDengueAlarm 7 ;
+                 :casesDengueSevere 0 ;
+                 :weekEnd "2025-02-01"^^xsd:date ;
+                 :weekNumber 5 ;
+                 :weekStart "2025-01-26"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W06
+:IndEpi_2025_W06 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 834 ;
+                 :casesDengueAlarm 7 ;
+                 :casesDengueSevere 2 ;
+                 :weekEnd "2025-02-08"^^xsd:date ;
+                 :weekNumber 6 ;
+                 :weekStart "2025-02-02"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W07
+:IndEpi_2025_W07 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 1074 ;
+                 :casesDengueAlarm 9 ;
+                 :casesDengueSevere 2 ;
+                 :weekEnd "2025-02-15"^^xsd:date ;
+                 :weekNumber 7 ;
+                 :weekStart "2025-02-09"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W08
+:IndEpi_2025_W08 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 1262 ;
+                 :casesDengueAlarm 13 ;
+                 :casesDengueSevere 1 ;
+                 :weekEnd "2025-02-22"^^xsd:date ;
+                 :weekNumber 8 ;
+                 :weekStart "2025-02-16"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W09
+:IndEpi_2025_W09 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 1568 ;
+                 :casesDengueAlarm 21 ;
+                 :casesDengueSevere 1 ;
+                 :weekEnd "2025-03-01"^^xsd:date ;
+                 :weekNumber 9 ;
+                 :weekStart "2025-02-23"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W10
+:IndEpi_2025_W10 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 1901 ;
+                 :casesDengueAlarm 20 ;
+                 :casesDengueSevere 1 ;
+                 :weekEnd "2025-03-08"^^xsd:date ;
+                 :weekNumber 10 ;
+                 :weekStart "2025-03-02"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W11
+:IndEpi_2025_W11 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 2667 ;
+                 :casesDengueAlarm 44 ;
+                 :casesDengueSevere 3 ;
+                 :weekEnd "2025-03-15"^^xsd:date ;
+                 :weekNumber 11 ;
+                 :weekStart "2025-03-09"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W12
+:IndEpi_2025_W12 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 3230 ;
+                 :casesDengueAlarm 61 ;
+                 :casesDengueSevere 3 ;
+                 :weekEnd "2025-03-22"^^xsd:date ;
+                 :weekNumber 12 ;
+                 :weekStart "2025-03-16"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W13
+:IndEpi_2025_W13 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 3554 ;
+                 :casesDengueAlarm 77 ;
+                 :casesDengueSevere 4 ;
+                 :weekEnd "2025-03-29"^^xsd:date ;
+                 :weekNumber 13 ;
+                 :weekStart "2025-03-23"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W14
+:IndEpi_2025_W14 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 3775 ;
+                 :casesDengueAlarm 69 ;
+                 :casesDengueSevere 3 ;
+                 :weekEnd "2025-04-05"^^xsd:date ;
+                 :weekNumber 14 ;
+                 :weekStart "2025-03-30"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W15
+:IndEpi_2025_W15 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 3506 ;
+                 :casesDengueAlarm 48 ;
+                 :casesDengueSevere 2 ;
+                 :weekEnd "2025-04-12"^^xsd:date ;
+                 :weekNumber 15 ;
+                 :weekStart "2025-04-06"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W16
+:IndEpi_2025_W16 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 3096 ;
+                 :casesDengueAlarm 37 ;
+                 :casesDengueSevere 3 ;
+                 :weekEnd "2025-04-19"^^xsd:date ;
+                 :weekNumber 16 ;
+                 :weekStart "2025-04-13"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W17
+:IndEpi_2025_W17 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 3270 ;
+                 :casesDengueAlarm 51 ;
+                 :casesDengueSevere 4 ;
+                 :weekEnd "2025-04-26"^^xsd:date ;
+                 :weekNumber 17 ;
+                 :weekStart "2025-04-20"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W18
+:IndEpi_2025_W18 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 2758 ;
+                 :casesDengueAlarm 62 ;
+                 :casesDengueSevere 0 ;
+                 :weekEnd "2025-05-03"^^xsd:date ;
+                 :weekNumber 18 ;
+                 :weekStart "2025-04-27"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W19
+:IndEpi_2025_W19 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 2774 ;
+                 :casesDengueAlarm 41 ;
+                 :casesDengueSevere 2 ;
+                 :weekEnd "2025-05-10"^^xsd:date ;
+                 :weekNumber 19 ;
+                 :weekStart "2025-05-04"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W20
+:IndEpi_2025_W20 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 2087 ;
+                 :casesDengueAlarm 37 ;
+                 :casesDengueSevere 3 ;
+                 :weekEnd "2025-05-17"^^xsd:date ;
+                 :weekNumber 20 ;
+                 :weekStart "2025-05-11"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W21
+:IndEpi_2025_W21 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 1643 ;
+                 :casesDengueAlarm 26 ;
+                 :casesDengueSevere 2 ;
+                 :weekEnd "2025-05-24"^^xsd:date ;
+                 :weekNumber 21 ;
+                 :weekStart "2025-05-18"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W22
+:IndEpi_2025_W22 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 1329 ;
+                 :casesDengueAlarm 17 ;
+                 :casesDengueSevere 2 ;
+                 :weekEnd "2025-05-31"^^xsd:date ;
+                 :weekNumber 22 ;
+                 :weekStart "2025-05-25"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W23
+:IndEpi_2025_W23 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 1014 ;
+                 :casesDengueAlarm 18 ;
+                 :casesDengueSevere 0 ;
+                 :weekEnd "2025-06-07"^^xsd:date ;
+                 :weekNumber 23 ;
+                 :weekStart "2025-06-01"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W24
+:IndEpi_2025_W24 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :casesDengue 436 ;
+                 :casesDengueAlarm 10 ;
+                 :casesDengueSevere 1 ;
+                 :weekEnd "2025-06-14"^^xsd:date ;
+                 :weekNumber 24 ;
+                 :weekStart "2025-06-08"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W25
+:IndEpi_2025_W25 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :weekEnd "2025-06-21"^^xsd:date ;
+                 :weekNumber 25 ;
+                 :weekStart "2025-06-15"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W26
+:IndEpi_2025_W26 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :weekEnd "2025-06-28"^^xsd:date ;
+                 :weekNumber 26 ;
+                 :weekStart "2025-06-22"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#IndEpi_2025_W53
+:IndEpi_2025_W53 rdf:type owl:NamedIndividual ,
+                          :IndicadorEpidemiologico ;
+                 :weekEnd "2026-01-03"^^xsd:date ;
+                 :weekNumber 53 ;
+                 :weekStart "2025-12-28"^^xsd:date .
+
+
+###  http://www.exemplo.org/arboviroses#InfograficoVacina
+:InfograficoVacina rdf:type owl:NamedIndividual ,
+                            :RecursoEducacional ;
+                   :temMediaNota "3.0"^^xsd:float ;
+                   :temTema "vacina dengue" ;
+                   :temTipo "infografico" ;
+                   :temTitulo "Infográfico: entenda a vacina contra a dengue" ;
+                   :temURL "https://static.poder360.com.br/2025/01/02-dengue-brasil-raio-x-23-jan-2025.png" ;
+                   :temNota 3 ;
+                   :temTema "vacina dengue" ;
+                   :temTipo "infografico" ;
+                   :temTitulo "Infográfico: entenda a vacina contra a dengue" .
+
+
+###  http://www.exemplo.org/arboviroses#JogoEducativo
+:JogoEducativo rdf:type owl:NamedIndividual ,
+                        :RecursoEducacional ;
+               :temMediaNota "4.0"^^xsd:float ;
+               :temTema "educação infantil sobre dengue" ;
+               :temTipo "jogo" ;
+               :temTitulo "Jogo interativo: Aprendendo sobre a dengue" ;
+               :temURL "https://www.escolagames.com.br/jogos/guerra-ao-mosquito" ;
+               :temNota 4 ;
+               :temTema "educação infantil sobre dengue" ;
+               :temTipo "jogo" ;
+               :temTitulo "Jogo interativo: Aprendendo sobre a dengue" .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_1
+:Regiao_1 rdf:type owl:NamedIndividual ,
+                   :Regiao ;
+          :temCRS "CENTRO" ;
+          :temDA "BOM RETIRO" ;
+          :temINC "225.8"^^xsd:float ;
+          :temNCC "90"^^xsd:int ;
+          :temUVIS "Santa Cecília" ;
+          rdfs:label "BOM RETIRO"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_10
+:Regiao_10 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "LESTE" ;
+           :temDA "ERMELINO" ;
+           :temINC "199.4"^^xsd:float ;
+           :temNCC "239"^^xsd:int ;
+           :temUVIS "Ermelino Matarazzo" ;
+           rdfs:label "ERMELINO"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_11
+:Regiao_11 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "LESTE" ;
+           :temDA "PONTE RASA" ;
+           :temINC "250.1"^^xsd:float ;
+           :temNCC "223"^^xsd:int ;
+           :temUVIS "Ermelino Matarazzo" ;
+           rdfs:label "PONTE RASA"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_12
+:Regiao_12 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "LESTE" ;
+           :temDA "GUAIANASES" ;
+           :temINC "421.0"^^xsd:float ;
+           :temNCC "470"^^xsd:int ;
+           :temUVIS "Guaianases" ;
+           rdfs:label "GUAIANASES"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_13
+:Regiao_13 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "LESTE" ;
+           :temDA "LAJEADO" ;
+           :temINC "194.6"^^xsd:float ;
+           :temNCC "346"^^xsd:int ;
+           :temUVIS "Guaianases" ;
+           rdfs:label "LAJEADO"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_14
+:Regiao_14 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "LESTE" ;
+           :temDA "ITAIM PAULISTA" ;
+           :temINC "252.5"^^xsd:float ;
+           :temNCC "602"^^xsd:int ;
+           :temUVIS "Itaim Paulista" ;
+           rdfs:label "ITAIM PAULISTA"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_15
+:Regiao_15 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "LESTE" ;
+           :temDA "VILA CURUÇA" ;
+           :temINC "275.3"^^xsd:float ;
+           :temNCC "428"^^xsd:int ;
+           :temUVIS "Itaim Paulista" ;
+           rdfs:label "VILA CURUÇA"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_16
+:Regiao_16 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "LESTE" ;
+           :temDA "CIDADE LÍDER" ;
+           :temINC "306.7"^^xsd:float ;
+           :temNCC "421"^^xsd:int ;
+           :temUVIS "Itaquera" ;
+           rdfs:label "CIDADE LÍDER"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_17
+:Regiao_17 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "LESTE" ;
+           :temDA "ITAQUERA" ;
+           :temINC "303.5"^^xsd:float ;
+           :temNCC "648"^^xsd:int ;
+           :temUVIS "Itaquera" ;
+           rdfs:label "ITAQUERA"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_18
+:Regiao_18 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "LESTE" ;
+           :temDA "JOSÉ BONIFÁCIO" ;
+           :temINC "272.5"^^xsd:float ;
+           :temNCC "379"^^xsd:int ;
+           :temUVIS "Itaquera" ;
+           rdfs:label "JOSÉ BONIFÁCIO"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_19
+:Regiao_19 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "LESTE" ;
+           :temDA "PARQUE DO CARMO" ;
+           :temINC "246.5"^^xsd:float ;
+           :temNCC "179"^^xsd:int ;
+           :temUVIS "Itaquera" ;
+           rdfs:label "PARQUE DO CARMO"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_2
+:Regiao_2 rdf:type owl:NamedIndividual ,
+                   :Regiao ;
+          :temCRS "CENTRO" ;
+          :temDA "CONSOLAÇÃO" ;
+          :temINC "268.1"^^xsd:float ;
+          :temNCC "153"^^xsd:int ;
+          :temUVIS "Santa Cecília" ;
+          rdfs:label "CONSOLAÇÃO"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_20
+:Regiao_20 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "LESTE" ;
+           :temDA "SÃO MATEUS" ;
+           :temINC "210.0"^^xsd:float ;
+           :temNCC "278"^^xsd:int ;
+           :temUVIS "São Mateus" ;
+           rdfs:label "SÃO MATEUS"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_21
+:Regiao_21 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "LESTE" ;
+           :temDA "SÃO RAFAEL" ;
+           :temINC "423.2"^^xsd:float ;
+           :temNCC "693"^^xsd:int ;
+           :temUVIS "São Mateus" ;
+           rdfs:label "SÃO RAFAEL"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_22
+:Regiao_22 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "LESTE" ;
+           :temDA "JARDIM HELENA" ;
+           :temINC "539.7"^^xsd:float ;
+           :temNCC "739"^^xsd:int ;
+           :temUVIS "São Miguel" ;
+           rdfs:label "JARDIM HELENA"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_23
+:Regiao_23 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "LESTE" ;
+           :temDA "SÃO MIGUEL" ;
+           :temINC "346.0"^^xsd:float ;
+           :temNCC "307"^^xsd:int ;
+           :temUVIS "São Miguel" ;
+           rdfs:label "SÃO MIGUEL"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_24
+:Regiao_24 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "LESTE" ;
+           :temDA "VILA JACUÍ" ;
+           :temINC "219.5"^^xsd:float ;
+           :temNCC "323"^^xsd:int ;
+           :temUVIS "São Miguel" ;
+           rdfs:label "VILA JACUÍ"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_25
+:Regiao_25 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "NORTE" ;
+           :temDA "CACHOEIRINHA" ;
+           :temINC "782.7"^^xsd:float ;
+           :temNCC "1157"^^xsd:int ;
+           :temUVIS "Cachoeirinha" ;
+           rdfs:label "CACHOEIRINHA"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_26
+:Regiao_26 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "NORTE" ;
+           :temDA "CASA VERDE" ;
+           :temINC "927.0"^^xsd:float ;
+           :temNCC "796"^^xsd:int ;
+           :temUVIS "Cachoeirinha" ;
+           rdfs:label "CASA VERDE"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_27
+:Regiao_27 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "NORTE" ;
+           :temDA "LIMÃO" ;
+           :temINC "681.4"^^xsd:float ;
+           :temNCC "543"^^xsd:int ;
+           :temUVIS "Cachoeirinha" ;
+           rdfs:label "LIMÃO"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_28
+:Regiao_28 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "NORTE" ;
+           :temDA "BRASILÂNDIA" ;
+           :temINC "962.3"^^xsd:float ;
+           :temNCC "2762"^^xsd:int ;
+           :temUVIS "Freguesia do Ó/Brasilândia" ;
+           rdfs:label "BRASILÂNDIA"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_29
+:Regiao_29 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "NORTE" ;
+           :temDA "FREGUESIA DO Ó" ;
+           :temINC "872.4"^^xsd:float ;
+           :temNCC "1219"^^xsd:int ;
+           :temUVIS "Freguesia do Ó/Brasilândia" ;
+           rdfs:label "FREGUESIA DO Ó"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_3
+:Regiao_3 rdf:type owl:NamedIndividual ,
+                   :Regiao ;
+          :temCRS "CENTRO" ;
+          :temDA "SANTA CECÍLIA" ;
+          :temINC "291.7"^^xsd:float ;
+          :temNCC "259"^^xsd:int ;
+          :temUVIS "Santa Cecília" ;
+          rdfs:label "SANTA CECÍLIA"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_30
+:Regiao_30 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "NORTE" ;
+           :temDA "JAÇANÃ" ;
+           :temINC "399.3"^^xsd:float ;
+           :temNCC "385"^^xsd:int ;
+           :temUVIS "Jacanã" ;
+           rdfs:label "JAÇANÃ"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_31
+:Regiao_31 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "NORTE" ;
+           :temDA "TREMEMBÉ" ;
+           :temINC "352.6"^^xsd:float ;
+           :temNCC "809"^^xsd:int ;
+           :temUVIS "Jacanã" ;
+           rdfs:label "TREMEMBÉ"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_32
+:Regiao_32 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "NORTE" ;
+           :temDA "ANHANGUERA" ;
+           :temINC "378.9"^^xsd:float ;
+           :temNCC "336"^^xsd:int ;
+           :temUVIS "Perus" ;
+           rdfs:label "ANHANGUERA"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_33
+:Regiao_33 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "NORTE" ;
+           :temDA "PERUS" ;
+           :temINC "959.4"^^xsd:float ;
+           :temNCC "880"^^xsd:int ;
+           :temUVIS "Perus" ;
+           rdfs:label "PERUS"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_34
+:Regiao_34 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "NORTE" ;
+           :temDA "JARAGUÁ" ;
+           :temINC "370.2"^^xsd:float ;
+           :temNCC "810"^^xsd:int ;
+           :temUVIS "Pirituba" ;
+           rdfs:label "JARAGUÁ"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_35
+:Regiao_35 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "NORTE" ;
+           :temDA "PIRITUBA" ;
+           :temINC "727.9"^^xsd:float ;
+           :temNCC "1249"^^xsd:int ;
+           :temUVIS "Pirituba" ;
+           rdfs:label "PIRITUBA"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_36
+:Regiao_36 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "NORTE" ;
+           :temDA "SÃO DOMINGOS" ;
+           :temINC "791.2"^^xsd:float ;
+           :temNCC "686"^^xsd:int ;
+           :temUVIS "Pirituba" ;
+           rdfs:label "SÃO DOMINGOS"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_37
+:Regiao_37 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "NORTE" ;
+           :temDA "SANTANA" ;
+           :temINC "440.4"^^xsd:float ;
+           :temNCC "491"^^xsd:int ;
+           :temUVIS "Santana" ;
+           rdfs:label "SANTANA"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_38
+:Regiao_38 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "NORTE" ;
+           :temDA "MANDAQUI" ;
+           :temINC "428.8"^^xsd:float ;
+           :temNCC "469"^^xsd:int ;
+           :temUVIS "Santana" ;
+           rdfs:label "MANDAQUI"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_39
+:Regiao_39 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "NORTE" ;
+           :temDA "TUCURUVI" ;
+           :temINC "505.9"^^xsd:float ;
+           :temNCC "483"^^xsd:int ;
+           :temUVIS "Santana" ;
+           rdfs:label "TUCURUVI"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_4
+:Regiao_4 rdf:type owl:NamedIndividual ,
+                   :Regiao ;
+          :temCRS [ rdfs:comment "Coordenadoria Regional de Saúde"
+                  ] ;
+          :temDA [ rdfs:comment "Distrito Administrativo"
+                 ] ;
+          :temINC [ rdfs:comment "Índice de contaminação. Se 300 casos por 100 mil habitantes então é epidemia"
+                  ] ;
+          :temNCC [ rdfs:comment "Número de casos de dengue confirmados"
+                  ] ;
+          :temUVIS [ rdfs:comment "Unidade de Vigilância em Saúde"
+                   ] ;
+          rdfs:label "BELA VISTA"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_40
+:Regiao_40 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "NORTE" ;
+           :temDA "VILA GUILHERME" ;
+           :temINC "354.9"^^xsd:float ;
+           :temNCC "204.0"^^xsd:float ;
+           :temUVIS "Vila Maria" ;
+           :temCRS "NORTE" ;
+           :temDA "VILA GUILHERME" ;
+           :temINC "354.9"^^xsd:float ;
+           :temNCC "204"^^xsd:int ;
+           :temUVIS "Vila Maria" ;
+           rdfs:label "VILA GUILHERME"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_41
+:Regiao_41 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "NORTE" ;
+           :temDA "VILA MARIA" ;
+           :temINC "269.7"^^xsd:float ;
+           :temNCC "308.0"^^xsd:float ;
+           :temUVIS "Vila Maria" ;
+           :temCRS "NORTE" ;
+           :temDA "VILA MARIA" ;
+           :temINC "269.7"^^xsd:float ;
+           :temNCC "308.0"^^xsd:float ;
+           :temUVIS "Vila Maria" ;
+           rdfs:label "VILA MARIA"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_42
+:Regiao_42 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "NORTE" ;
+           :temDA "VILA MEDEIROS" ;
+           :temINC "350.3"^^xsd:float ;
+           :temNCC 429 ;
+           :temUVIS "Vila Maria" ;
+           :temCRS "NORTE" ;
+           :temDA "VILA MEDEIROS" ;
+           :temINC "350.3"^^xsd:float ;
+           :temNCC "429"^^xsd:int ;
+           :temUVIS "Vila Maria" ;
+           rdfs:label "VILA MEDEIROS"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_43
+:Regiao_43 rdf:type owl:NamedIndividual ,
+                    :Regiao ;
+           :temCRS "LESTE" ;
+           :temDA "IGUATEMI" ;
+           :temINC "368.2"^^xsd:float ;
+           :temNCC "572"^^xsd:int ;
+           :temUVIS "São Mateus" ;
+           rdfs:label "IGUATEMI"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_5
+:Regiao_5 rdf:type owl:NamedIndividual ,
+                   :Regiao ;
+          :temCRS "CENTRO" ;
+          :temDA "CAMBUCI" ;
+          :temINC "276.8"^^xsd:float ;
+          :temNCC "114"^^xsd:int ;
+          :temUVIS "Sé" ;
+          rdfs:label "CAMBUCI"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_6
+:Regiao_6 rdf:type owl:NamedIndividual ,
+                   :Regiao ;
+          :temCRS "CENTRO" ;
+          :temDA "LIBERDADE" ;
+          :temINC "262.4"^^xsd:float ;
+          :temNCC "192"^^xsd:int ;
+          :temUVIS "Sé" ;
+          rdfs:label "LIBERDADE"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_7
+:Regiao_7 rdf:type owl:NamedIndividual ,
+                   :Regiao ;
+          :temCRS "CENTRO" ;
+          :temDA "REPÚBLICA" ;
+          :temINC "223.5"^^xsd:float ;
+          :temNCC "139"^^xsd:int ;
+          :temUVIS "Sé" ;
+          rdfs:label "REPÚBLICA"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_8
+:Regiao_8 rdf:type owl:NamedIndividual ,
+                   :Regiao ;
+          :temCRS "CENTRO" ;
+          :temDA "SÉ" ;
+          :temINC "293.7"^^xsd:float ;
+          :temNCC "80.0"^^xsd:float ;
+          :temUVIS "Sé" ;
+          :temCRS "CENTRO" ;
+          :temDA "SÉ" ;
+          :temINC "293.7"^^xsd:float ;
+          :temNCC "80"^^xsd:int ;
+          :temUVIS "Sé" ;
+          rdfs:label "SÉ"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#Regiao_9
+:Regiao_9 rdf:type owl:NamedIndividual ,
+                   :Regiao ;
+          :temCRS "LESTE" ;
+          :temDA "CIDADE TIRADENTES" ;
+          :temINC "454.6"^^xsd:float ;
+          :temNCC "1102"^^xsd:int ;
+          :temUVIS "Cidade Tiradentes" ;
+          rdfs:label "CIDADE TIRADENTES"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#TamparCaixasDAgua
+:TamparCaixasDAgua rdf:type owl:NamedIndividual ,
+                            :Prevencao ;
+                   :descricao "Mantenha as caixas d'água sempre fechadas com tampa adequada." ;
+                   :previneContra "Chikungunya" ,
+                                  "Dengue" ,
+                                  "Zika" ;
+                   :descricao "Mantenha as caixas d'água sempre fechadas com tampa adequada." ;
+                   :previneContra :Chikungunya ,
+                                  :Dengue ,
+                                  :Zika ;
+                   rdfs:label "Tampar caixas d'água" .
+
+
+###  http://www.exemplo.org/arboviroses#UsarRepelente
+:UsarRepelente rdf:type owl:NamedIndividual ,
+                        :Prevencao ;
+               :descricao "Aplicar repelente nas áreas expostas do corpo para evitar picadas." ;
+               :previneContra "Chikungunya" ,
+                              "Dengue" ,
+                              "Zika" ;
+               :descricao "Aplicar repelente nas áreas expostas do corpo para evitar picadas." ;
+               :previneContra :Chikungunya ,
+                              :Dengue ,
+                              :Zika ;
+               rdfs:label "Usar repelente" .
+
+
+###  http://www.exemplo.org/arboviroses#VacinarContraFebreAmarela
+:VacinarContraFebreAmarela rdf:type owl:NamedIndividual ,
+                                    :Prevencao ;
+                           :descricao "A vacina é a forma mais eficaz de prevenção contra a febre amarela." ;
+                           :previneContra "Febre Amarela" ;
+                           :descricao "A vacina é a forma mais eficaz de prevenção contra a febre amarela." ;
+                           :previneContra :FebreAmarela ;
+                           rdfs:label "Vacinar contra febre amarela" .
+
+
+###  http://www.exemplo.org/arboviroses#VideoCombate
+:VideoCombate rdf:type owl:NamedIndividual ,
+                       :RecursoEducacional ;
+              :temMediaNota "5.0"^^xsd:float ;
+              :temTema "eliminação de criadouros" ;
+              :temTipo "video" ;
+              :temTitulo "Como combater focos do mosquito em casa" ;
+              :temURL "https://www.youtube.com/watch?v=VZTuxZw9QAg" ;
+              :temNota 5 ;
+              :temTema "eliminação de criadouros" ;
+              :temTipo "video" ;
+              :temTitulo "Como combater focos do mosquito em casa" .
+
+
+###  http://www.exemplo.org/arboviroses#VideoVacina
+:VideoVacina rdf:type owl:NamedIndividual ,
+                      :RecursoEducacional ;
+             :temMediaNota "4.0"^^xsd:float ;
+             :temTema "vacina dengue" ;
+             :temTipo "video" ;
+             :temTitulo "Vacina contra a dengue: quem pode tomar?" ;
+             :temURL "https://www.youtube.com/watch?v=gzwF2BgtW-w" ;
+             :temNota 4 ;
+             :temTema "vacina dengue" ;
+             :temTipo "video" ;
+             :temTitulo "Vacina contra a dengue: quem pode tomar?" .
+
+
+###  http://www.exemplo.org/arboviroses#Zika
+:Zika rdf:type owl:NamedIndividual ,
+               :Arbovirose ;
+      :temAgenteEtiologico "ZIKV (vírus Zika)" ;
+      :temSintoma "Coceira, manchas vermelhas, febre baixa, conjuntivite" ;
+      :transmitidoPor "Aedes aegypti" ;
+      :temAgenteEtiologico "ZIKV (vírus Zika)" ;
+      :temSintoma "Coceira, manchas vermelhas, febre baixa, conjuntivite" ;
+      :transmitidaPor "Aedes aegypti" ;
+      rdfs:label "Zika" .
+
+
+###  http://www.exemplo.org/arboviroses#ana
+:ana rdf:type owl:NamedIndividual ,
+              :Usuario ;
+     :temDataNascimento "1997-02-27"^^xsd:date ;
+     :temEmail "ana@example.com" ;
+     :temNome "Ana" ;
+     :temPreferenciaTipo "Infografico" ,
+                         "video" .
+
+
+###  http://www.exemplo.org/arboviroses#bruno
+:bruno rdf:type owl:NamedIndividual ,
+                :Usuario ;
+       :temDataNascimento "1995-01-30"^^xsd:date ;
+       :temEmail "bruno@example.com" ;
+       :temNome "Bruno" ;
+       :temPreferenciaTipo "jogo" ,
+                           "quiz" ;
+       :temDataNascimento "1995-01-30"^^xsd:date ;
+       :temEmail "bruno@example.com" ;
+       :temNome "Bruno" ;
+       :temPreferenciaTipo "jogo" ,
+                           "quiz" .
+
+
+###  http://www.exemplo.org/arboviroses#catilha
+:catilha rdf:type owl:NamedIndividual ,
+                  :RecursoEducacional ;
+         :temMediaNota "2.0"^^xsd:float ;
+         :temTema "educação em saúde nas escolas" ;
+         :temTipo "cartilha" ;
+         :temTitulo "Cartilha escolar: Conhecendo a dengue" ;
+         :temURL "https://www.ubec.edu.br/wp-content/uploads/2024/02/CARTILHA.pdf" ;
+         :temNota "2"^^xsd:int ;
+         :temTema "educação em saúde nas escolas" ;
+         :temTipo "cartilha" ;
+         :temTitulo "Cartilha escolar: Conhecendo a dengue" .
+
+
+###  http://www.exemplo.org/arboviroses#clara
+:clara rdf:type owl:NamedIndividual ,
+                :Usuario ;
+       :temDataNascimento "2003-01-22"^^xsd:date ;
+       :temEmail "clara@example.com" ;
+       :temNome "Clara" ;
+       :temPreferenciaTipo "podcast" ,
+                           "video" ;
+       :temDataNascimento "2003-01-22"^^xsd:date ;
+       :temEmail "clara@example.com" ;
+       :temNome "Clara" ;
+       :temPreferenciaTipo "podcast" ,
+                           "video" .
+
+
+###  http://www.exemplo.org/arboviroses#daniel
+:daniel rdf:type owl:NamedIndividual ,
+                 :Usuario ;
+        :temDataNascimento "1985-05-02"^^xsd:date ;
+        :temEmail "daniel@example.com" ;
+        :temNome "Daniel" ;
+        :temPreferenciaTipo "cartilha" ,
+                            "infografico" ;
+        :temDataNascimento "1985-05-02"^^xsd:date ;
+        :temEmail "daniel@example.com" ;
+        :temNome "Daniel" ;
+        :temPreferenciaTipo "cartilha" ,
+                            "infografico" .
+
+
+###  http://www.exemplo.org/arboviroses#eduarda
+:eduarda rdf:type owl:NamedIndividual ,
+                  :Usuario ;
+         :temDataNascimento "2000-01-25"^^xsd:date ;
+         :temEmail "eduarda@example.com" ;
+         :temNome "Eduarda" ;
+         :temPreferenciaTipo "jogo" ;
+         :temDataNascimento "2000-01-25"^^xsd:date ;
+         :temEmail "eduarda@example.com" ;
+         :temNome "Eduarda" ;
+         :temPreferenciaTipo "jogo" .
+
+
+###  http://www.exemplo.org/arboviroses#felipe
+:felipe rdf:type owl:NamedIndividual ,
+                 :Usuario ;
+        :temDataNascimento "1987-04-15"^^xsd:date ;
+        :temEmail "felipe@example.com" ;
+        :temNome "Felipe" ;
+        :temPreferenciaTipo "caça-palavras" ,
+                            "video" ;
+        :temDataNascimento "1987-04-15"^^xsd:date ;
+        :temEmail "felipe@example.com" ;
+        :temNome "Felipe" ;
+        :temPreferenciaTipo "caça-palavras" ,
+                            "video" .
+
+
+###  http://www.exemplo.org/arboviroses#gabriel
+:gabriel rdf:type owl:NamedIndividual ,
+                  :Usuario ;
+         :temDataNascimento "1991-06-23"^^xsd:date ;
+         :temEmail "gabriel@example.com" ;
+         :temNome "Gabriel" ;
+         :temPreferenciaTipo "infografico" ,
+                             "quiz" ;
+         :temDataNascimento "1991-06-23"^^xsd:date ;
+         :temEmail "gabriel@example.com" ;
+         :temNome "Gabriel" ;
+         :temPreferenciaTipo "infografico" ,
+                             "quiz" .
+
+
+###  http://www.exemplo.org/arboviroses#helena
+:helena rdf:type owl:NamedIndividual ,
+                 :Usuario ;
+        :temDataNascimento "2020-09-26"^^xsd:date ;
+        :temEmail "helena@example.com" ;
+        :temNome "Helena" ;
+        :temPreferenciaTipo "jogo" ,
+                            "video" ;
+        :temDataNascimento "2020-09-26"^^xsd:date ;
+        :temEmail "helena@example.com" ;
+        :temNome "Helena" ;
+        :temPreferenciaTipo "jogo" ,
+                            "video" .
+
+
+###  http://www.exemplo.org/arboviroses#igor
+:igor rdf:type owl:NamedIndividual ,
+               :Usuario ;
+      :temDataNascimento "2013-05-01"^^xsd:date ;
+      :temEmail "igor@example.com" ;
+      :temNome "Igor" ;
+      :temPreferenciaTipo "jogo" ,
+                          "video" ;
+      :temDataNascimento "2013-05-01"^^xsd:date ;
+      :temEmail "igor@example.com" ;
+      :temNome "Igor" ;
+      :temPreferenciaTipo "jogo" ,
+                          "video" .
+
+
+###  http://www.exemplo.org/arboviroses#juliana
+:juliana rdf:type owl:NamedIndividual ,
+                  :Usuario ;
+         :temDataNascimento "1997-03-28"^^xsd:date ;
+         :temEmail "juliana@example.com" ;
+         :temNome "Juliana" ;
+         :temPreferenciaTipo "cartilha" ,
+                             "infografico" ;
+         :temDataNascimento "1997-03-28"^^xsd:date ;
+         :temEmail "juliana@example.com" ;
+         :temNome "Juliana" ;
+         :temPreferenciaTipo "cartilha" ,
+                             "infografico" .
+
+
+###  http://www.exemplo.org/arboviroses#podcast
+:podcast rdf:type owl:NamedIndividual ,
+                  :RecursoEducacional ;
+         :temMediaNota "4.0"^^xsd:float ;
+         :temTema "prevenção da dengue" ;
+         :temTipo "podcast" ;
+         :temTitulo "Podcast: dicas de prevenção da dengue" ;
+         :temURL "https://open.spotify.com/episode/0xUbXHyhl9QIgXOtDh2ZbP" ;
+         :temNota 4 ;
+         :temTema "prevenção da dengue" ;
+         :temTipo "podcast" ;
+         :temTitulo "Podcast: dicas de prevenção da dengue" .
+
+
+###  http://www.exemplo.org/arboviroses#renato
+:renato rdf:type owl:NamedIndividual ,
+                 :Usuario ;
+        :temDataNascimento "1981-09-05"^^xsd:date ;
+        :temEmail "renatobdo@gmail.com" ;
+        :temNome "Renato" ;
+        :temPreferenciaTipo "podcast" ,
+                            "video" ;
+        :temDataNascimento "1981-09-05"^^xsd:date ;
+        :temEmail "renatobdo@gmail.com" ;
+        :temNome "Renato" ;
+        :temPreferenciaTipo "podcast" ,
+                            "video" .
+
+
+###  http://www.exemplo.org/arboviroses#sintoma_dor_articular
+:sintoma_dor_articular rdf:type owl:NamedIndividual ,
+                                :Sintoma ;
+                       :descricao "Dor nas articulações" ;
+                       rdfs:label "Dor nas articulações"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#sintoma_dor_cabeca
+:sintoma_dor_cabeca rdf:type owl:NamedIndividual ,
+                             :Sintoma ;
+                    :descricao "Dor de cabeça" ;
+                    rdfs:label "Dor de cabeça"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#sintoma_dor_muscular
+:sintoma_dor_muscular rdf:type owl:NamedIndividual ,
+                               :Sintoma ;
+                      :descricao "Dor muscular" ;
+                      rdfs:label "Dor muscular"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#sintoma_dor_olhos
+:sintoma_dor_olhos rdf:type owl:NamedIndividual ,
+                            :Sintoma ;
+                   :descricao "Dor atrás dos olhos" ;
+                   rdfs:label "Dor atrás dos olhos"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#sintoma_fadiga
+:sintoma_fadiga rdf:type owl:NamedIndividual ,
+                         :Sintoma ;
+                :descricao "Cansaço ou fadiga" ;
+                rdfs:label "Cansaço ou fadiga"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#sintoma_febre
+:sintoma_febre rdf:type owl:NamedIndividual ,
+                        :Sintoma ;
+               :descricao "Febre alta" ;
+               rdfs:label "Febre alta"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#sintoma_manchas
+:sintoma_manchas rdf:type owl:NamedIndividual ,
+                          :Sintoma ;
+                 :descricao "Manchas vermelhas na pele" ;
+                 rdfs:label "Manchas vermelhas na pele"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#sintoma_nausea
+:sintoma_nausea rdf:type owl:NamedIndividual ,
+                         :Sintoma ;
+                :descricao "Náusea ou vômito" ;
+                rdfs:label "Náusea ou vômito"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#sintoma_sangramento
+:sintoma_sangramento rdf:type owl:NamedIndividual ,
+                              :Sintoma ;
+                     :descricao "Sangramentos leves (gengivas, nariz)" ;
+                     rdfs:label "Sangramentos leves (gengivas, nariz)"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#tratamento_analgesico
+:tratamento_analgesico rdf:type owl:NamedIndividual ,
+                                :Tratamento ;
+                       :descricao "Utilização de paracetamol ou dipirona para controle de febre e dores. Evitar anti-inflamatórios como AAS e ibuprofeno." ;
+                       :descricao "Utilização de paracetamol ou dipirona para controle de febre e dores. Evitar anti-inflamatórios como AAS e ibuprofeno." ;
+                       rdfs:label "Uso de analgésicos"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#tratamento_hidratacao
+:tratamento_hidratacao rdf:type owl:NamedIndividual ,
+                                :Tratamento ;
+                       :descricao "Ingestão de líquidos é essencial para evitar a desidratação, uma das principais causas de complicações na dengue." ;
+                       :descricao "Ingestão de líquidos é essencial para evitar a desidratação, uma das principais causas de complicações na dengue." ;
+                       rdfs:label "Hidratação oral ou venosa"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#tratamento_hospitalar
+:tratamento_hospitalar rdf:type owl:NamedIndividual ,
+                                :Tratamento ;
+                       :descricao "Recomendado em casos de dengue com sinais de alarme ou grave, com suporte intensivo." ;
+                       :descricao "Recomendado em casos de dengue com sinais de alarme ou grave, com suporte intensivo." ;
+                       rdfs:label "Internação hospitalar"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#tratamento_monitoramento
+:tratamento_monitoramento rdf:type owl:NamedIndividual ,
+                                   :Tratamento ;
+                          :descricao "Acompanhamento médico regular para avaliar sinais de alarme ou agravamento." ;
+                          :descricao "Acompanhamento médico regular para avaliar sinais de alarme ou agravamento." ;
+                          rdfs:label "Monitoramento clínico"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#tratamento_repouso
+:tratamento_repouso rdf:type owl:NamedIndividual ,
+                             :Tratamento ;
+                    :descricao "Repousar ajuda o organismo a se recuperar mais rapidamente." ;
+                    :descricao "Repousar ajuda o organismo a se recuperar mais rapidamente." ;
+                    rdfs:label "Repouso absoluto"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#usuariotesteaateste
+:usuariotesteaateste rdf:type owl:NamedIndividual ,
+                              :Usuario ;
+                     :temDataNascimento "2010-06-27"^^xsd:date ;
+                     :temEmail "testea@gmail.com" ;
+                     :temNome "testea ateste" ;
+                     :temDA "VILA CURUÇA" ;
+                     :temDataNascimento "2010-06-27"^^xsd:date ;
+                     :temEmail "testea@gmail.com" ;
+                     :temNome "testea ateste" .
+
+
+###  http://www.exemplo.org/arboviroses#usuariotestebbteste
+:usuariotestebbteste rdf:type owl:NamedIndividual ,
+                              :Usuario ;
+                     :temDA "VILA GUILHERME" ;
+                     :temDataNascimento "2009-06-27"^^xsd:date ;
+                     :temEmail "testeb@gmail.com" ;
+                     :temNome "testeb bteste" ;
+                     :temDA "VILA GUILHERME" ;
+                     :temDataNascimento "2009-06-27"^^xsd:date ;
+                     :temEmail "testeb@gmail.com" ;
+                     :temNome "testeb bteste" .
+
+
+###  http://www.exemplo.org/arboviroses#vetor_aedes_aegypti
+:vetor_aedes_aegypti rdf:type owl:NamedIndividual ,
+                              :Vetor ;
+                     :caracteristica "Tem hábitos diurnos e se reproduz em água parada." ;
+                     :nomeCientifico "Aedes aegypti" ;
+                     :transmite "http://www.exemplo.org/arboviroses#chikungunya" ,
+                                "http://www.exemplo.org/arboviroses#dengue" ,
+                                "http://www.exemplo.org/arboviroses#zika" ;
+                     :caracteristica "Tem hábitos diurnos e se reproduz em água parada." ;
+                     :nomeCientifico "Aedes aegypti" ;
+                     :transmite :chikungunya ,
+                                :dengue ,
+                                :zika ;
+                     rdfs:label "Aedes aegypti"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#vetor_aedes_albopictus
+:vetor_aedes_albopictus rdf:type owl:NamedIndividual ,
+                                 :Vetor ;
+                        :caracteristica "Também conhecido como mosquito-tigre, vive em áreas mais sombreadas." ;
+                        :nomeCientifico "Aedes albopictus" ;
+                        :transmite "http://www.exemplo.org/arboviroses#chikungunya" ,
+                                   "http://www.exemplo.org/arboviroses#zika" ;
+                        :caracteristica "Também conhecido como mosquito-tigre, vive em áreas mais sombreadas." ;
+                        :nomeCientifico "Aedes albopictus" ;
+                        :transmite :chikungunya ,
+                                   :zika ;
+                        rdfs:label "Aedes albopictus"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#vetor_haemagogus
+:vetor_haemagogus rdf:type owl:NamedIndividual ,
+                           :Vetor ;
+                  :caracteristica "Mosquito silvestre, transmissor da febre amarela nas matas." ;
+                  :nomeCientifico "Haemagogus spp." ;
+                  :transmite "http://www.exemplo.org/arboviroses#febreAmarela" ;
+                  :caracteristica "Mosquito silvestre, transmissor da febre amarela nas matas." ;
+                  :nomeCientifico "Haemagogus spp." ;
+                  :transmite :febreAmarela ;
+                  rdfs:label "Haemagogus spp."@pt .
+
+
+###  http://www.exemplo.org/arboviroses#virus_chikungunya
+:virus_chikungunya rdf:type owl:NamedIndividual ,
+                            :Virus ;
+                   :causa "http://www.exemplo.org/arboviroses#chikungunya" ;
+                   :nomeCientifico "CHIKV" ;
+                   :possuiFamilia "Togaviridae" ;
+                   :causa :chikungunya ;
+                   :nomeCientifico "CHIKV" ;
+                   :possuiFamilia "Togaviridae" ;
+                   rdfs:label "Vírus Chikungunya"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#virus_dengue
+:virus_dengue rdf:type owl:NamedIndividual ,
+                       :Virus ;
+              :causa "http://www.exemplo.org/arboviroses#dengue" ;
+              :nomeCientifico "DENV" ;
+              :possuiSorotipo "DENV-1" ,
+                              "DENV-2" ,
+                              "DENV-3" ,
+                              "DENV-4" ;
+              :causa :dengue ;
+              :nomeCientifico "DENV" ;
+              :possuiSorotipo "DENV-1" ,
+                              "DENV-2" ,
+                              "DENV-3" ,
+                              "DENV-4" ;
+              rdfs:label "Vírus da Dengue"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#virus_febre_amarela
+:virus_febre_amarela rdf:type owl:NamedIndividual ,
+                              :Virus ;
+                     :causa "http://www.exemplo.org/arboviroses#febreAmarela" ;
+                     :nomeCientifico "YFV" ;
+                     :possuiFamilia "Flaviviridae" ;
+                     :causa :febreAmarela ;
+                     :nomeCientifico "YFV" ;
+                     :possuiFamilia "Flaviviridae" ;
+                     rdfs:label "Vírus da Febre Amarela"@pt .
+
+
+###  http://www.exemplo.org/arboviroses#virus_zika
+:virus_zika rdf:type owl:NamedIndividual ,
+                     :Virus ;
+            :causa "http://www.exemplo.org/arboviroses#zika" ;
+            :nomeCientifico "ZIKV" ;
+            :possuiFamilia "Flaviviridae" ;
+            :causa :zika ;
+            :nomeCientifico "ZIKV" ;
+            :possuiFamilia "Flaviviridae" ;
+            rdfs:label "Vírus Zika"@pt .
+
+
+[ rdfs:comment "índice de contaminação. Se > 300 por 100 mil habitantes então é epidemia"
+] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+:testeaateste :temPreferenciaTipo "infografico" ,
+                                   "video" .
+
+
+:testebbteste :temPreferenciaTipo "cartilha" ,
+                                  "video" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
